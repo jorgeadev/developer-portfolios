@@ -1,0 +1,43 @@
+{
+  "name": "developer-portfolio",
+  "description": "Portfolio of Tedy Dev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d out",
+    "predeploy": "npm run build && npm run export"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.1",
+    "@next/third-parties": "^14.1.3",
+    "@vercel/analytics": "^1.2.2",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
+    "jquery": "^3.7.1",
+    "lottie-react": "^2.4.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+    "react-fast-marquee": "^1.6.2",
+    "react-icons": "^4.11.0",
+    "react-intersection-observer": "^9.8.2",
+    "react-toastify": "^10.0.4",
+    "sharp": "^0.33.3",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "gh-pages": "^6.1.1",
+    "postcss": "latest",
+    "sass": "^1.69.5",
+    "tailwindcss": "latest"
+  }
+}
