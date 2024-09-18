@@ -14,7 +14,7 @@
     "@next/third-parties": "^14.2.5",
     "axios": "^1.7.3",
     "lottie-react": "^2.4.0",
-    "next": "^14.2.5",
+    "next": "^14.2.10",
     "react": "latest",
     "react-dom": "latest",
     "react-fast-marquee": "^1.6.5",
