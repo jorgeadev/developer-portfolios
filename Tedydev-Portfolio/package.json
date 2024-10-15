@@ -20,7 +20,7 @@
     "emailjs-com": "^3.2.0",
     "jquery": "^3.7.1",
     "lottie-react": "^2.4.0",
-    "next": "^14.2.5",
+    "next": "^14.2.10",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
