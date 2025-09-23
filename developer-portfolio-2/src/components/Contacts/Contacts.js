@@ -149,6 +149,10 @@ function Contacts() {
                     setEmail('');
                     setMessage('');
                     setOpen(false);
+                }).catch((error) => {
+                    console.log('Failed to send message');
+                    setErrMsg('Failed to send message. Please try again.');
+                    setOpen(true);
                 });
             } else {
                 setErrMsg('Invalid email');
