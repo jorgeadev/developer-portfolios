@@ -1,0 +1,151 @@
+# Security Guidelines for Developer Portfolios
+
+This document outlines security best practices and guidelines for the developer portfolio projects in this repository.
+
+## Security Audit Results (Last Updated: September 2024)
+
+### Portfolio Security Status:
+- ✅ **developer-portfolio/**: No vulnerabilities found
+- ✅ **Tedydev-Portfolio/**: No vulnerabilities found  
+- ✅ **vivekneupane-portfolio/**: 1 low severity vulnerability fixed
+- ❌ **developer-portfolio-2/**: **9 vulnerabilities found (3 moderate, 6 high)** - See SECURITY-NOTICE.md
+- ✅ **github-portfolio/**: Not audited (basic HTML/CSS portfolio)
+
+### Critical Security Issues Fixed
+- ✅ **Hardcoded API Keys**: Removed real EmailJS credentials from .env.example files
+- ✅ **Variable Reference Bugs**: Fixed undefined variable references in contact forms
+- ✅ **Information Disclosure**: Removed sensitive error logging from API endpoints
+- ✅ **Input Sanitization**: Added XSS prevention through input sanitization
+
+## Security Best Practices
+
+### 1. Environment Variables
+- **Never commit actual API keys or secrets to the repository**
+- Always use `.env.example` files with placeholder values
+- Keep sensitive environment variables in `.env.local` (which should be in .gitignore)
+
+### 2. Input Validation and Sanitization
+- All user inputs should be validated and sanitized
+- Contact forms now include basic XSS prevention
+- Email validation is implemented using regex patterns
+
+### 3. Error Handling
+- API endpoints should not expose sensitive error information
+- Use generic error messages for client-side display
+- Log detailed errors server-side for debugging (without sensitive data)
+
+### 4. Contact Forms Security
+- Implement rate limiting for contact form submissions
+- Use CAPTCHA verification where available
+- Sanitize all user inputs before processing
+
+### 5. Dependencies Security
+- Regularly update dependencies to patch security vulnerabilities
+- Run `npm audit` to check for known vulnerabilities
+- Use tools like Dependabot for automated security updates
+
+## Recommended Security Headers
+
+Add the following security headers to your Next.js applications:
+
+```javascript
+// next.config.js
+const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+        ],
+      },
+    ]
+  },
+}
+```
+
+## Content Security Policy (CSP)
+
+Consider implementing CSP headers to prevent XSS attacks:
+
+```javascript
+{
+  key: 'Content-Security-Policy',
+  value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
+}
+```
+
+## API Security
+
+### Rate Limiting
+Implement rate limiting for API endpoints to prevent abuse:
+
+```javascript
+// Example rate limiting implementation
+const rateLimit = new Map();
+
+export async function POST(request) {
+  const ip = request.headers.get('x-forwarded-for') || 'unknown';
+  const now = Date.now();
+  const windowMs = 15 * 60 * 1000; // 15 minutes
+  const maxRequests = 5;
+
+  if (!rateLimit.has(ip)) {
+    rateLimit.set(ip, { count: 1, resetTime: now + windowMs });
+  } else {
+    const limit = rateLimit.get(ip);
+    if (now < limit.resetTime) {
+      if (limit.count >= maxRequests) {
+        return NextResponse.json(
+          { error: 'Too many requests' },
+          { status: 429 }
+        );
+      }
+      limit.count++;
+    } else {
+      rateLimit.set(ip, { count: 1, resetTime: now + windowMs });
+    }
+  }
+  
+  // Continue with normal processing...
+}
+```
+
+## Reporting Security Issues
+
+If you find a security vulnerability, please:
+1. **Do not** open a public issue
+2. Contact the repository maintainers privately
+3. Provide detailed information about the vulnerability
+4. Allow time for the issue to be addressed before public disclosure
+
+## Security Checklist for New Portfolios
+
+When adding a new portfolio to this repository:
+
+- [ ] No hardcoded API keys or secrets
+- [ ] Input validation and sanitization implemented
+- [ ] Error handling doesn't expose sensitive information
+- [ ] CAPTCHA protection for contact forms (if applicable)
+- [ ] Security headers configured
+- [ ] Dependencies are up-to-date and secure
+- [ ] Rate limiting considered for API endpoints
+- [ ] Environment variables properly configured
+
+## Tools and Resources
+
+- [Next.js Security Documentation](https://nextjs.org/docs/advanced-features/security-headers)
+- [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+- [npm audit](https://docs.npmjs.com/cli/v8/commands/npm-audit) for dependency vulnerability scanning
+- [Dependabot](https://docs.github.com/en/code-security/dependabot) for automated security updates
