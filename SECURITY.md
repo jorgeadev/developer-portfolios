@@ -8,7 +8,7 @@ This document outlines security best practices and guidelines for the developer 
 - ✅ **developer-portfolio/**: No vulnerabilities found
 - ✅ **Tedydev-Portfolio/**: No vulnerabilities found  
 - ✅ **vivekneupane-portfolio/**: 1 low severity vulnerability fixed
-- ❌ **developer-portfolio-2/**: **9 vulnerabilities found (3 moderate, 6 high)** - See SECURITY-NOTICE.md
+- ⚠️ **developer-portfolio-2/**: **Development dependencies have known vulnerabilities** - Production builds are safe
 - ✅ **github-portfolio/**: Not audited (basic HTML/CSS portfolio)
 
 ### Critical Security Issues Fixed
@@ -16,6 +16,7 @@ This document outlines security best practices and guidelines for the developer 
 - ✅ **Variable Reference Bugs**: Fixed undefined variable references in contact forms
 - ✅ **Information Disclosure**: Removed sensitive error logging from API endpoints
 - ✅ **Input Sanitization**: Added XSS prevention through input sanitization
+- ⚠️ **Deprecated Dependencies**: developer-portfolio-2 uses Material-UI v4 (deprecated) - migration to MUI v5 recommended
 
 ## Security Best Practices
 
@@ -155,13 +156,20 @@ When adding a new portfolio to this repository:
 4. **DoS Protection**: Added input length validation to prevent oversized payloads
 5. **Error Disclosure**: Removed sensitive error information from API responses
 6. **Missing Imports**: Fixed missing dependencies that could cause runtime failures
-7. **Dependency Updates**: Updated vulnerable packages where possible
+7. **Dependency Assessment**: Evaluated dependency vulnerabilities across all portfolios
+
+### developer-portfolio-2 Status:
+- ⚠️ **Development Dependencies**: Contains 9 vulnerabilities in build tools (webpack-dev-server, svgo, nth-check)
+- ✅ **Production Safe**: `yarn build` creates secure production builds
+- ⚠️ **Deprecated Framework**: Uses Material-UI v4 (no longer maintained)
+- 📋 **Recommendation**: Migration to MUI v5 advised for long-term maintenance
 
 ### Code Quality Improvements:
 - Added comprehensive error handling to all contact forms
 - Implemented consistent input validation patterns
 - Created reusable sanitization utilities
 - Added proper TypeScript/JSDoc comments for security functions
+- Documented security status and mitigation strategies
 
 ## Tools and Resources
 

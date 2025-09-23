@@ -162,6 +162,14 @@ npm start
 ```
 yarn start
 ```
+
+### 🔒 Security Note
+This template uses Material-UI v4 which is deprecated. For production builds, use:
+```
+yarn build
+```
+For best security practices and long-term maintenance, consider migrating to MUI v5. See `SECURITY-NOTICE.md` for details.
+
 <br />
 
 # Folder Structure :open_file_folder:
