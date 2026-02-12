@@ -22,18 +22,18 @@ import Skills from "./components/homepage/skills";
 // };
 
 export default async function Home() {
-  // const blogs = await getData();
+	// const blogs = await getData();
 
-  return (
-    <>
-      <HeroSection />
-      <AboutSection />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Education />
-      <Blog  />
-      <ContactSection />
-    </>
-  )
+	return (
+		<>
+			<HeroSection />
+			<AboutSection />
+			<Experience />
+			<Skills />
+			<Projects />
+			<Education />
+			<Blog  />
+			<ContactSection />
+		</>
+	);
 };
