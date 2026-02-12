@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+  
+  --breakpoint-4k: 1980px;
+}
 
 :root {
   --foreground-rgb: rgb(211, 216, 232);
@@ -68,7 +73,7 @@ body {
 }
 
 .sticky-card {
-  // padding-top: calc(var(--index) * 2.5rem);
+  /* padding-top: calc(var(--index) * 2.5rem); */
   top: calc(var(--index) * 4rem);
 }
 
@@ -166,44 +171,46 @@ img.logo {
   }
 }
 
-// #profile-img {
-//   transform: rotate(-360deg) skew(0deg) scale(0.8);
-//   position: relative; /* Thêm position: relative; vào #profile-img */
-// }
+/* 
+#profile-img {
+  transform: rotate(-360deg) skew(0deg) scale(0.8);
+  position: relative; // Thêm position: relative; vào #profile-img
+}
 
-// .layer {
-//   transition: 0.5s;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%); /* Để căn giữa phần tử .layer */
-// }
+.layer {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); // Để căn giữa phần tử .layer
+}
 
-// #profile-img:hover .layer:nth-child(4) {
-//   transform: translate(-160px, -160px);
-//   opacity: 1;
-// }
+#profile-img:hover .layer:nth-child(4) {
+  transform: translate(-160px, -160px);
+  opacity: 1;
+}
 
-// #profile-img:hover .layer:nth-child(3) {
-//   transform: translate(-120px, -120px);
-//   opacity: 0.8;
-// }
+#profile-img:hover .layer:nth-child(3) {
+  transform: translate(-120px, -120px);
+  opacity: 0.8;
+}
 
-// #profile-img:hover .layer:nth-child(2) {
-//   transform: translate(-80px, -80px);
-//   opacity: 0.6;
-// }
+#profile-img:hover .layer:nth-child(2) {
+  transform: translate(-80px, -80px);
+  opacity: 0.6;
+}
 
-// #profile-img:hover .layer:nth-child(1) {
-//   transform: translate(-40px, -40px);
-//   opacity: 0.4;
-// }
+#profile-img:hover .layer:nth-child(1) {
+  transform: translate(-40px, -40px);
+  opacity: 0.4;
+}
+*/
 
-// #about {
-//   margin-top: 7rem;
-//   margin-bottom: 7rem;
-//   padding-bottom: 10rem;
-// }
+/* #about {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  padding-bottom: 10rem;
+} */
 
 /* zalo */
 
@@ -286,7 +293,7 @@ div.fcta-zalo-mess {
 }
 
 .fcta-zalo-ben-trong-nut {
-    // position: relative;
+    /* position: relative; */
     transform: translate(35%, 35%);
     text-align: center;
     width: 60%;
@@ -339,7 +346,7 @@ div.fcta-zalo-mess {
     right: 58px;
     z-index: 99;
     background: linear-gradient(to right, #7c3aed, #ec4899);
-    // background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 7px 25px 7px 15px;
     color: var(--zalo-chat-color);
     border-radius: 50px 0 0 50px;
