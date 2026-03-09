@@ -34,6 +34,50 @@
     backdrop-filter: blur(20px) !important;
 }
 
+.nav-menu-icon {
+    font-size: 2.5rem;
+    color: var(--menu-color);
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: color 0.3s;
+}
+
+.nav-menu-icon:hover {
+    color: var(--menu-color-hover);
+}
+
+.drawer-item {
+    margin: 2rem auto;
+    border-radius: 78.8418px;
+    background: var(--item-bg);
+    color: var(--item-color);
+    width: 85%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border: 2px solid var(--item-border);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.drawer-item:hover {
+    background: var(--item-bg-hover) !important;
+    color: var(--item-color-hover) !important;
+}
+
+.drawer-links {
+    font-family: var(--primaryFont);
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.drawer-icon {
+    font-size: 1.6rem;
+}
+
 
 @media (max-width:1100px) {
     .navbar--container{
@@ -67,6 +111,20 @@
     }
     .MuiDrawer-paper{
       border-radius: 0 !important;
+    }
+    .drawer-item {
+        width: 100%;
+        padding: 0 25px;
+        height: 55px;
+    }
+    .drawer-links {
+        font-size: 1.125rem;
+    }
+    .drawer-icon {
+        font-size: 1.385rem;
+    }
+    .nav-menu-icon {
+        font-size: 2rem;
     }
 }
 

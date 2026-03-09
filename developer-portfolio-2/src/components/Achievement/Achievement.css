@@ -52,6 +52,11 @@
     transition: background-color 200ms ease-in-out;
     width: 100%;
     position: relative;
+    background-color: var(--card-bg, transparent);
+}
+
+.achievement-card:hover {
+    background-color: var(--card-bg-hover, transparent);
 }
 
 .achievecard-content {

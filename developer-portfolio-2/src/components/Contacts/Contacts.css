@@ -103,6 +103,77 @@
     cursor: pointer;
 }
 
+.contacts-submit-btn {
+    background-color: var(--submit-bg);
+    color: var(--submit-color);
+    transition: 250ms ease-in-out;
+}
+
+.contacts-submit-btn:hover {
+    transform: scale(1.08);
+    color: var(--submit-color);
+    background-color: var(--submit-bg-hover);
+}
+
+.contacts-label {
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0 5px;
+    transform: translate(25px, 50%);
+    display: inline-flex;
+}
+
+.contacts-input {
+    border: 4px solid var(--input-border);
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    transition: border 0.2s ease-in-out;
+}
+
+.contacts-input:focus {
+    border: 4px solid var(--input-border-focus);
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    background-color: var(--social-bg);
+    color: var(--social-color);
+    transition: 250ms ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: var(--social-color);
+    background-color: var(--social-bg-hover);
+}
+
+.details-icon {
+    background-color: var(--details-bg);
+    color: var(--details-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    transition: 250ms ease-in-out;
+    flex-shrink: 0;
+}
+
+.details-icon:hover {
+    transform: scale(1.1);
+    color: var(--details-color);
+    background-color: var(--details-bg-hover);
+}
+
 .submit-btn button p {
     font-size: 16px;
     font-family: var(--primaryFont);

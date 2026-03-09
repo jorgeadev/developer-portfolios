@@ -1,9 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
+import { Snackbar, IconButton, SnackbarContent } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
-import { makeStyles } from '@material-ui/core/styles';
 import {
     FaTwitter,
     FaLinkedinIn,
@@ -47,87 +46,17 @@ function Contacts() {
         setOpen(false);
     };
 
-    const useStyles = makeStyles((t) => ({
-        input: {
-            border: `4px solid ${theme.primary80}`,
-            backgroundColor: `${theme.secondary}`,
-            color: `${theme.tertiary}`,
-            fontFamily: 'var(--primaryFont)',
-            fontWeight: 500,
-            transition: 'border 0.2s ease-in-out',
-            '&:focus': {
-                border: `4px solid ${theme.primary600}`,
-            },
-        },
-        message: {
-            border: `4px solid ${theme.primary80}`,
-            backgroundColor: `${theme.secondary}`,
-            color: `${theme.tertiary}`,
-            fontFamily: 'var(--primaryFont)',
-            fontWeight: 500,
-            transition: 'border 0.2s ease-in-out',
-            '&:focus': {
-                border: `4px solid ${theme.primary600}`,
-            },
-        },
-        label: {
-            backgroundColor: `${theme.secondary}`,
-            color: `${theme.primary}`,
-            fontFamily: 'var(--primaryFont)',
-            fontWeight: 600,
-            fontSize: '0.9rem',
-            padding: '0 5px',
-            transform: 'translate(25px,50%)',
-            display: 'inline-flex',
-        },
-        socialIcon: {
-            width: '45px',
-            height: '45px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontSize: '21px',
-            backgroundColor: theme.primary,
-            color: theme.secondary,
-            transition: '250ms ease-in-out',
-            '&:hover': {
-                transform: 'scale(1.1)',
-                color: theme.secondary,
-                backgroundColor: theme.tertiary,
-            },
-        },
-        detailsIcon: {
-            backgroundColor: theme.primary,
-            color: theme.secondary,
-            borderRadius: '50%',
-            width: '45px',
-            height: '45px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontSize: '23px',
-            transition: '250ms ease-in-out',
-            flexShrink: 0,
-            '&:hover': {
-                transform: 'scale(1.1)',
-                color: theme.secondary,
-                backgroundColor: theme.tertiary,
-            },
-        },
-        submitBtn: {
-            backgroundColor: theme.primary,
-            color: theme.secondary,
-            transition: '250ms ease-in-out',
-            '&:hover': {
-                transform: 'scale(1.08)',
-                color: theme.secondary,
-                backgroundColor: theme.tertiary,
-            },
-        },
-    }));
+    const socialIconStyle = {
+        '--social-bg': theme.primary,
+        '--social-color': theme.secondary,
+        '--social-bg-hover': theme.tertiary,
+    };
 
-    const classes = useStyles();
+    const detailsIconStyle = {
+        '--details-bg': theme.primary,
+        '--details-color': theme.secondary,
+        '--details-bg-hover': theme.tertiary,
+    };
 
     const handleContactForm = (e) => {
         e.preventDefault();
@@ -176,7 +105,14 @@ function Contacts() {
                     <div className='contacts-form'>
                         <form onSubmit={handleContactForm}>
                             <div className='input-container'>
-                                <label htmlFor='Name' className={classes.label}>
+                                <label
+                                    htmlFor='Name'
+                                    className='contacts-label'
+                                    style={{
+                                        backgroundColor: theme.secondary,
+                                        color: theme.primary,
+                                    }}
+                                >
                                     Name
                                 </label>
                                 <input
@@ -185,13 +121,23 @@ function Contacts() {
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
                                     name='Name'
-                                    className={`form-input ${classes.input}`}
+                                    className='form-input contacts-input'
+                                    style={{
+                                        '--input-border': theme.primary80,
+                                        '--input-border-focus': theme.primary600,
+                                        backgroundColor: theme.secondary,
+                                        color: theme.tertiary,
+                                    }}
                                 />
                             </div>
                             <div className='input-container'>
                                 <label
                                     htmlFor='Email'
-                                    className={classes.label}
+                                    className='contacts-label'
+                                    style={{
+                                        backgroundColor: theme.secondary,
+                                        color: theme.primary,
+                                    }}
                                 >
                                     Email
                                 </label>
@@ -201,13 +147,23 @@ function Contacts() {
                                     onChange={(e) => setEmail(e.target.value)}
                                     type='email'
                                     name='Email'
-                                    className={`form-input ${classes.input}`}
+                                    className='form-input contacts-input'
+                                    style={{
+                                        '--input-border': theme.primary80,
+                                        '--input-border-focus': theme.primary600,
+                                        backgroundColor: theme.secondary,
+                                        color: theme.tertiary,
+                                    }}
                                 />
                             </div>
                             <div className='input-container'>
                                 <label
                                     htmlFor='Message'
-                                    className={classes.label}
+                                    className='contacts-label'
+                                    style={{
+                                        backgroundColor: theme.secondary,
+                                        color: theme.primary,
+                                    }}
                                 >
                                     Message
                                 </label>
@@ -217,14 +173,25 @@ function Contacts() {
                                     onChange={(e) => setMessage(e.target.value)}
                                     type='text'
                                     name='Message'
-                                    className={`form-message ${classes.message}`}
+                                    className='form-message contacts-input'
+                                    style={{
+                                        '--input-border': theme.primary80,
+                                        '--input-border-focus': theme.primary600,
+                                        backgroundColor: theme.secondary,
+                                        color: theme.tertiary,
+                                    }}
                                 />
                             </div>
 
                             <div className='submit-btn'>
                                 <button
                                     type='submit'
-                                    className={classes.submitBtn}
+                                    className='contacts-submit-btn'
+                                    style={{
+                                        '--submit-bg': theme.primary,
+                                        '--submit-color': theme.secondary,
+                                        '--submit-bg-hover': theme.tertiary,
+                                    }}
                                 >
                                     <p>{!success ? 'Send' : 'Sent'}</p>
                                     <div className='submit-icon'>
@@ -289,7 +256,7 @@ function Contacts() {
                             href={`mailto:${contactsData.email}`}
                             className='personal-details'
                         >
-                            <div className={classes.detailsIcon}>
+                            <div className='details-icon' style={detailsIconStyle}>
                                 <FiAtSign />
                             </div>
                             <p style={{ color: theme.tertiary }}>
@@ -300,7 +267,7 @@ function Contacts() {
                             href={`tel:${contactsData.phone}`}
                             className='personal-details'
                         >
-                            <div className={classes.detailsIcon}>
+                            <div className='details-icon' style={detailsIconStyle}>
                                 <FiPhone />
                             </div>
                             <p style={{ color: theme.tertiary }}>
@@ -308,7 +275,7 @@ function Contacts() {
                             </p>
                         </a>
                         <div className='personal-details'>
-                            <div className={classes.detailsIcon}>
+                            <div className='details-icon' style={detailsIconStyle}>
                                 <HiOutlineLocationMarker />
                             </div>
                             <p style={{ color: theme.tertiary }}>
@@ -322,7 +289,8 @@ function Contacts() {
                                     href={socialsData.twitter}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaTwitter aria-label='Twitter' />
                                 </a>
@@ -332,7 +300,8 @@ function Contacts() {
                                     href={socialsData.github}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaGithub aria-label='GitHub' />
                                 </a>
@@ -342,7 +311,8 @@ function Contacts() {
                                     href={socialsData.linkedIn}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaLinkedinIn aria-label='LinkedIn' />
                                 </a>
@@ -352,7 +322,8 @@ function Contacts() {
                                     href={socialsData.instagram}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
@@ -362,7 +333,8 @@ function Contacts() {
                                     href={socialsData.medium}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaMediumM aria-label='Medium' />
                                 </a>
@@ -372,7 +344,8 @@ function Contacts() {
                                     href={socialsData.blogger}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaBloggerB aria-label='Blogger' />
                                 </a>
@@ -382,38 +355,41 @@ function Contacts() {
                                     href={socialsData.youtube}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
-                                   e-label='YouTube' />
+                                    <FaYoutube aria-label='YouTube' />
                                 </a>
                             )}
                             {socialsData.reddit && (
-                                <
-                                    className = {classes.socialIcon}
+                                <a
                                     href={socialsData.reddit}
                                     target='_blank'
-                            ra                                    className={classes.socialIcon}
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
-                            <FaRedditAlien aria-label='Reddit' />
-                        </>
+                                    <FaRedditAlien aria-label='Reddit' />
+                                </a>
                             )}
                             {socialsData.stackOverflow && (
-
-                            className = { classes.socialIcon } < a
-                                    href={socialsData.stackOverflow}
-                        ta                                   rel='noreferrer'
-                                    className={classes.socialIcon}
-                 >
-                                    <FaStackOverflow aria-label='Stack Overflow' />
-                    </>
-
-                    className={classes.socialIcon})}
-                            {socialsData.codepen && (
                                 <a
-                            href={socia
+                                    href={socialsData.stackOverflow}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
+                                >
+                                    <FaStackOverflow aria-label='Stack Overflow' />
+                                </a>
+                            )}
+                            {socialsData.codepen && (
+                                <a
+                                    href={socialsData.codepen}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaCodepen aria-label='CodePen' />
                                 </a>
@@ -423,7 +399,8 @@ function Contacts() {
                                     href={socialsData.gitlab}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className={classes.socialIcon}
+                                    className='social-icon'
+                                    style={socialIconStyle}
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
