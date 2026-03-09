@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -12,20 +11,9 @@ function EducationCard({ id, institution, course, startYear, endYear }) {
 
     const { theme } = useContext(ThemeContext);
 
-    const useStyles = makeStyles((t) => ({
-        educationCard : {
-            backgroundColor:theme.primary30,
-            "&:hover": {
-                backgroundColor:theme.primary50,
-            },
-        },
-    }));
-
-    const classes = useStyles();
-
     return (
         <Fade bottom>
-            <div key={id} className={`education-card ${classes.educationCard}`} >
+            <div key={id} className="education-card" style={{ '--card-bg': theme.primary30, '--card-bg-hover': theme.primary50 }}>
                 <div className="educard-img" style={{backgroundColor: theme.primary}}>
                     <img src={theme.type === 'light' ? eduImgBlack : eduImgWhite} alt="" />
                 </div>

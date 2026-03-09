@@ -66,6 +66,32 @@
     cursor: pointer;
 }
 
+.blog--viewAllBtn {
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+}
+
+.blog--viewAllBtn:hover {
+    color: var(--btn-color-hover);
+    background-color: var(--btn-bg-hover);
+}
+
+.blog--viewArr {
+    color: var(--arr-color);
+    background-color: var(--arr-bg);
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blog--viewArr:hover {
+    color: var(--arr-color-hover);
+    background-color: var(--arr-bg-hover);
+}
+
 
 @media (min-width: 992px) and (max-width: 1380px) {
 

@@ -38,6 +38,11 @@
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
+    background-color: var(--card-bg, transparent);
+}
+
+.experience-card:hover {
+    background-color: var(--card-bg-hover, transparent);
 }
 
 .expcard-img {
