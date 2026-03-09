@@ -389,7 +389,7 @@ function Contacts() {
                             )}
                             {socialsData.reddit && (
                                 <
-                                    className = {classes.socialIcon}a
+                                    className = {classes.socialIcon}
                                     href={socialsData.reddit}
                                     target='_blank'
                             ra                                    className={classes.socialIcon}
