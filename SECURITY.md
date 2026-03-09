@@ -8,7 +8,7 @@ This document outlines security best practices and guidelines for the developer 
 - ✅ **developer-portfolio/**: No vulnerabilities found
 - ✅ **Tedydev-Portfolio/**: No vulnerabilities found  
 - ✅ **vivekneupane-portfolio/**: 1 low severity vulnerability fixed
-- ⚠️ **developer-portfolio-2/**: **Development dependencies have known vulnerabilities** - Production builds are safe
+- ✅ **developer-portfolio-2/**: `nth-check` (CVE-2021-3803) patched via `pnpm.overrides`
 - ✅ **github-portfolio/**: Not audited (basic HTML/CSS portfolio)
 
 ### Critical Security Issues Fixed
@@ -16,7 +16,7 @@ This document outlines security best practices and guidelines for the developer 
 - ✅ **Variable Reference Bugs**: Fixed undefined variable references in contact forms
 - ✅ **Information Disclosure**: Removed sensitive error logging from API endpoints
 - ✅ **Input Sanitization**: Added XSS prevention through input sanitization
-- ⚠️ **Deprecated Dependencies**: developer-portfolio-2 uses Material-UI v4 (deprecated) - migration to MUI v5 recommended
+- ✅ **Dependency Override**: Fixed `nth-check` (CVE-2021-3803) in developer-portfolio-2 via `pnpm.overrides`
 
 ## Security Best Practices
 
