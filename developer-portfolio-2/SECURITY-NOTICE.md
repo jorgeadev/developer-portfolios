@@ -4,43 +4,34 @@
 
 This portfolio template has been assessed for security vulnerabilities. The current status is:
 
-### Vulnerabilities Found:
-- **9 total vulnerabilities** in development dependencies (3 moderate, 6 high severity)
-- **High Severity Issues:**
-  - nth-check: Inefficient Regular Expression Complexity
-  - Multiple SVGR/webpack related vulnerabilities
-- **Moderate Severity Issues:**
-  - PostCSS line return parsing error
-  - webpack-dev-server source code exposure risks
+### Vulnerabilities Fixed:
+- ✅ **nth-check (CVE-2021-3803)**: Inefficient Regular Expression Complexity — fixed via `pnpm.overrides` pinning `nth-check@^2.1.1`
 
 ### Important Notes:
-- ✅ **Production builds are safe** - these vulnerabilities are in development dependencies only
-- ✅ **The application builds and runs correctly** using `yarn build`
-- ⚠️ **Material-UI v4 is deprecated** - consider migrating to MUI v5 for long-term maintenance
+- ✅ **Production builds are safe** — these vulnerabilities are in development dependencies only
+- ✅ **The application builds and runs correctly** using `pnpm run build`
+- ⚠️ **react-scripts is the root cause** — it pins old transitive dependencies (nth-check, svgo, webpack-dev-server) that cannot be updated through normal dependency updates alone
+- ⚠️ **`pnpm.overrides` is required** to force the patched version of `nth-check` because react-scripts locks its sub-dependencies internally
 
-### Dependencies with Security Issues:
-- Material-UI v4 (deprecated, no longer maintained)
-- React Scripts development dependencies (svgo, nth-check, webpack-dev-server)
-- PostCSS (vulnerable version in build tools)
+### Why Updating Dependencies Alone Didn't Fix It:
+`react-scripts@5.x` has its own internal dependency graph that locks vulnerable packages at specific versions (e.g. `nth-check@1.0.2` via `@svgr/webpack → @svgr/plugin-svgo → svgo@1.3.2 → css-select@2.x`). Simply adding `webpack-dev-server` or `postcss` at newer versions in your project's `package.json` does not affect these deeply nested transitive dependencies. The `pnpm.overrides` field in `package.json` forces all instances of the affected package to use the safe version.
 
 ## Recommendations
 
 ### For Production Use:
-1. ✅ **Safe to use in production** - `yarn build` creates secure production builds
-2. ✅ **Development vulnerabilities don't affect production** 
-3. ⚠️ **Consider migrating to MUI v5** for future maintenance
+1. ✅ **Safe to use in production** — `pnpm run build` creates secure production builds
+2. ✅ **nth-check vulnerability patched** via pnpm overrides
 
 ### For Long-term Maintenance:
-1. **Migrate to Material-UI v5 (MUI)**
-2. **Update React components** to use MUI v5 APIs
-3. **Follow Material-UI to MUI migration guide**
-4. **Test thoroughly after updates**
+1. **Consider migrating from `react-scripts` to Vite** for a modern, actively maintained build toolchain
+2. **Test thoroughly after any build toolchain migration**
+3. **Set up Dependabot** for automated dependency update PRs
 
 ### Security Best Practices:
 - Set up automated dependency updates (Dependabot)
-- Regularly run `npm audit` or `yarn audit`
+- Regularly run `pnpm audit` to check for known vulnerabilities
 - Keep dependencies up to date
-- Use `yarn build` for production deployments
+- Use `pnpm run build` for production deployments
 
 ## Alternative Recommendation
 
@@ -50,5 +41,5 @@ Consider using one of the other portfolio templates in this repository that have
 - `vivekneupane-portfolio/`
 
 ---
-**This notice was last updated on:** September 23, 2024
-**Last security audit:** September 23, 2024
+**This notice was last updated on:** March 2026
+**Last security audit:** March 2026
