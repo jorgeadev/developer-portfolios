@@ -1,234 +1,161 @@
-import adobeXd from "../public/svg/skills/adobe-xd.svg";
-import adobeaudition from "../public/svg/skills/adobeaudition.svg";
-import afterEffects from "../public/svg/skills/after-effects.svg";
-import angular from "../public/svg/skills/angular.svg";
-import aws from "../public/svg/skills/aws.svg";
-import azure from "../public/svg/skills/azure.svg";
-import blender from "../public/svg/skills/blender.svg";
-import bootstrap from "../public/svg/skills/bootstrap.svg";
-import bulma from "../public/svg/skills/bulma.svg";
-import c from "../public/svg/skills/c.svg";
-import canva from "../public/svg/skills/canva.svg";
-import capacitorjs from "../public/svg/skills/capacitorjs.svg";
-import coffeescript from "../public/svg/skills/coffeescript.svg";
-import cplusplus from "../public/svg/skills/cplusplus.svg";
-import csharp from "../public/svg/skills/csharp.svg";
-import css from "../public/svg/skills/css.svg";
-import dart from "../public/svg/skills/dart.svg";
-import deno from "../public/svg/skills/deno.svg";
-import django from "../public/svg/skills/django.svg";
-import docker from "../public/svg/skills/docker.svg";
-import fastify from "../public/svg/skills/fastify.svg";
-import figma from "../public/svg/skills/figma.svg";
-import firebase from "../public/svg/skills/firebase.svg";
-import flutter from "../public/svg/skills/flutter.svg";
-import gcp from "../public/svg/skills/gcp.svg";
-import gimp from "../public/svg/skills/gimp.svg";
-import git from "../public/svg/skills/git.svg";
-import go from "../public/svg/skills/go.svg";
-import graphql from "../public/svg/skills/graphql.svg";
-import haxe from "../public/svg/skills/haxe.svg";
-import html from "../public/svg/skills/html.svg";
-import illustrator from "../public/svg/skills/illustrator.svg";
-import ionic from "../public/svg/skills/ionic.svg";
-import java from "../public/svg/skills/java.svg";
-import javascript from "../public/svg/skills/javascript.svg";
-import julia from "../public/svg/skills/julia.svg";
-import kotlin from "../public/svg/skills/kotlin.svg";
-import lightroom from "../public/svg/skills/lightroom.svg";
-import markdown from "../public/svg/skills/markdown.svg";
-import materialui from "../public/svg/skills/materialui.svg";
-import matlab from "../public/svg/skills/matlab.svg";
-import memsql from "../public/svg/skills/memsql.svg";
-import microsoftoffice from "../public/svg/skills/microsoftoffice.svg";
-import mongoDB from "../public/svg/skills/mongoDB.svg";
-import mysql from "../public/svg/skills/mysql.svg";
-import nextJS from "../public/svg/skills/nextJS.svg";
-import nginx from "../public/svg/skills/nginx.svg";
-import numpy from "../public/svg/skills/numpy.svg";
-import nuxtJS from "../public/svg/skills/nuxtJS.svg";
-import opencv from "../public/svg/skills/opencv.svg";
-import photoshop from "../public/svg/skills/photoshop.svg";
-import php from "../public/svg/skills/php.svg";
-import picsart from "../public/svg/skills/picsart.svg";
-import postgresql from "../public/svg/skills/postgresql.svg";
-import premierepro from "../public/svg/skills/premierepro.svg";
-import python from "../public/svg/skills/python.svg";
-import pytorch from "../public/svg/skills/pytorch.svg";
-import react from "../public/svg/skills/react.svg";
-import ruby from "../public/svg/skills/ruby.svg";
-import selenium from "../public/svg/skills/selenium.svg";
-import sketch from "../public/svg/skills/sketch.svg";
-import strapi from "../public/svg/skills/strapi.svg";
-import svelte from "../public/svg/skills/svelte.svg";
-import swift from "../public/svg/skills/swift.svg";
-import tailwind from "../public/svg/skills/tailwind.svg";
-import tensorflow from "../public/svg/skills/tensorflow.svg";
-import typescript from "../public/svg/skills/typescript.svg";
-import unity from "../public/svg/skills/unity.svg";
-import vitejs from "../public/svg/skills/vitejs.svg";
-import vue from "../public/svg/skills/vue.svg";
-import vuetifyjs from "../public/svg/skills/vuetifyjs.svg";
-import webix from "../public/svg/skills/webix.svg";
-import wolframalpha from "../public/svg/skills/wolframalpha.svg";
-import wordpress from "../public/svg/skills/wordpress.svg";
+
 
 
 export const skillsImage = (skill) => {
 	const skillID = skill.toLowerCase();
 	switch (skillID) {
 		case "gcp":
-			return gcp;
+			return { src: "/svg/skills/gcp.svg" };
 		case "node js":
-			return javascript;
+			return { src: "/svg/skills/javascript.svg" };
 		case "html":
-			return html;
+			return { src: "/svg/skills/html.svg" };
 		case "photoshop":
-			return photoshop;
+			return { src: "/svg/skills/photoshop.svg" };
 		case "docker":
-			return docker;
+			return { src: "/svg/skills/docker.svg" };
 		case "illustrator":
-			return illustrator;
+			return { src: "/svg/skills/illustrator.svg" };
 		case "adobe xd":
-			return adobeXd;
+			return { src: "/svg/skills/adobe-xd.svg" };
 		case "after effects":
-			return afterEffects;
+			return { src: "/svg/skills/after-effects.svg" };
 		case "css":
-			return css;
+			return { src: "/svg/skills/css.svg" };
 		case "angular":
-			return angular;
+			return { src: "/svg/skills/angular.svg" };
 		case "javascript":
-			return javascript;
+			return { src: "/svg/skills/javascript.svg" };
 		case "next js":
-			return nextJS;
+			return { src: "/svg/skills/nextJS.svg" };
 		case "nuxt js":
-			return nuxtJS;
+			return { src: "/svg/skills/nuxtJS.svg" };
 		case "react":
-			return react;
+			return { src: "/svg/skills/react.svg" };
 		case "reactnative":
-			return react;
+			return { src: "/svg/skills/react.svg" };
 		case "svelte":
-			return svelte;
+			return { src: "/svg/skills/svelte.svg" };
 		case "typescript":
-			return typescript;
+			return { src: "/svg/skills/typescript.svg" };
 		case "vue":
-			return vue;
+			return { src: "/svg/skills/vue.svg" };
 		case "bootstrap":
-			return bootstrap;
+			return { src: "/svg/skills/bootstrap.svg" };
 		case "bulma":
-			return bulma;
+			return { src: "/svg/skills/bulma.svg" };
 		case "capacitorjs":
-			return capacitorjs;
+			return { src: "/svg/skills/capacitorjs.svg" };
 		case "coffeescript":
-			return coffeescript;
+			return { src: "/svg/skills/coffeescript.svg" };
 		case "memsql":
-			return memsql;
+			return { src: "/svg/skills/memsql.svg" };
 		case "mongodb":
-			return mongoDB;
+			return { src: "/svg/skills/mongoDB.svg" };
 		case "mysql":
-			return mysql;
+			return { src: "/svg/skills/mysql.svg" };
 		case "postgresql":
-			return postgresql;
+			return { src: "/svg/skills/postgresql.svg" };
 		case "tailwind":
-			return tailwind;
+			return { src: "/svg/skills/tailwind.svg" };
 		case "vitejs":
-			return vitejs;
+			return { src: "/svg/skills/vitejs.svg" };
 		case "vuetifyjs":
-			return vuetifyjs;
+			return { src: "/svg/skills/vuetifyjs.svg" };
 		case "c":
-			return c;
+			return { src: "/svg/skills/c.svg" };
 		case "c++":
-			return cplusplus;
+			return { src: "/svg/skills/cplusplus.svg" };
 		case "c#":
-			return csharp;
+			return { src: "/svg/skills/csharp.svg" };
 		case "dart":
-			return dart;
+			return { src: "/svg/skills/dart.svg" };
 		case "go":
-			return go;
+			return { src: "/svg/skills/go.svg" };
 		case "java":
-			return java;
+			return { src: "/svg/skills/java.svg" };
 		case "kotlin":
-			return kotlin;
+			return { src: "/svg/skills/kotlin.svg" };
 		case "julia":
-			return julia;
+			return { src: "/svg/skills/julia.svg" };
 		case "matlab":
-			return matlab;
+			return { src: "/svg/skills/matlab.svg" };
 		case "php":
-			return php;
+			return { src: "/svg/skills/php.svg" };
 		case "python":
-			return python;
+			return { src: "/svg/skills/python.svg" };
 		case "ruby":
-			return ruby;
+			return { src: "/svg/skills/ruby.svg" };
 		case "swift":
-			return swift;
+			return { src: "/svg/skills/swift.svg" };
 		case "adobe audition":
-			return adobeaudition;
+			return { src: "/svg/skills/adobeaudition.svg" };
 		case "aws":
-			return aws;
+			return { src: "/svg/skills/aws.svg" };
 		case "deno":
-			return deno;
+			return { src: "/svg/skills/deno.svg" };
 		case "django":
-			return django;
+			return { src: "/svg/skills/django.svg" };
 		case "firebase":
-			return firebase;
+			return { src: "/svg/skills/firebase.svg" };
 		case "gimp":
-			return gimp;
+			return { src: "/svg/skills/gimp.svg" };
 		case "git":
-			return git;
+			return { src: "/svg/skills/git.svg" };
 		case "graphql":
-			return graphql;
+			return { src: "/svg/skills/graphql.svg" };
 		case "lightroom":
-			return lightroom;
+			return { src: "/svg/skills/lightroom.svg" };
 		case "materialui":
-			return materialui;
+			return { src: "/svg/skills/materialui.svg" };
 		case "nginx":
-			return nginx;
+			return { src: "/svg/skills/nginx.svg" };
 		case "numpy":
-			return numpy;
+			return { src: "/svg/skills/numpy.svg" };
 		case "opencv":
-			return opencv;
+			return { src: "/svg/skills/opencv.svg" };
 		case "premiere pro":
-			return premierepro;
+			return { src: "/svg/skills/premierepro.svg" };
 		case "pytorch":
-			return pytorch;
+			return { src: "/svg/skills/pytorch.svg" };
 		case "selenium":
-			return selenium;
+			return { src: "/svg/skills/selenium.svg" };
 		case "strapi":
-			return strapi;
+			return { src: "/svg/skills/strapi.svg" };
 		case "tensorflow":
-			return tensorflow;
+			return { src: "/svg/skills/tensorflow.svg" };
 		case "webix":
-			return webix;
+			return { src: "/svg/skills/webix.svg" };
 		case "wordpress":
-			return wordpress;
+			return { src: "/svg/skills/wordpress.svg" };
 		case "azure":
-			return azure;
+			return { src: "/svg/skills/azure.svg" };
 		case "blender":
-			return blender;
+			return { src: "/svg/skills/blender.svg" };
 		case "fastify":
-			return fastify;
+			return { src: "/svg/skills/fastify.svg" };
 		case "figma":
-			return figma;
+			return { src: "/svg/skills/figma.svg" };
 		case "flutter":
-			return flutter;
+			return { src: "/svg/skills/flutter.svg" };
 		case "haxe":
-			return haxe;
+			return { src: "/svg/skills/haxe.svg" };
 		case "ionic":
-			return ionic;
+			return { src: "/svg/skills/ionic.svg" };
 		case "markdown":
-			return markdown;
+			return { src: "/svg/skills/markdown.svg" };
 		case "microsoft office":
-			return microsoftoffice;
+			return { src: "/svg/skills/microsoftoffice.svg" };
 		case "picsart":
-			return picsart;
+			return { src: "/svg/skills/picsart.svg" };
 		case "sketch":
-			return sketch;
+			return { src: "/svg/skills/sketch.svg" };
 		case "unity":
-			return unity;
+			return { src: "/svg/skills/unity.svg" };
 		case "wolframalpha":
-			return wolframalpha;
+			return { src: "/svg/skills/wolframalpha.svg" };
 		case "canva":
-			return canva;
+			return { src: "/svg/skills/canva.svg" };
 		default:
 			break;
 	}

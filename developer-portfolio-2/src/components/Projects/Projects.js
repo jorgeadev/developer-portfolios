@@ -1,6 +1,6 @@
 import React,{ useContext} from 'react';
 import { Link } from 'react-router-dom'
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
@@ -14,34 +14,31 @@ function Projects() {
     const { theme } = useContext(ThemeContext);
 
     
-    const useStyles = makeStyles(() => ({
-        viewAllBtn : {
-            color: theme.tertiary, 
+    const ViewAllBtn = styled('button')(({ theme }) => ({
+        color: theme.tertiary,
+        backgroundColor: theme.primary,
+        transition: 'color 0.2s',
+        "&:hover": {
+            color: theme.secondary,
             backgroundColor: theme.primary,
-            transition: 'color 0.2s',
-            "&:hover": {
-                color: theme.secondary, 
-                backgroundColor: theme.primary,
-            }
-        },
-        viewArr : {
-            color: theme.tertiary, 
-            backgroundColor: theme.secondary70,
-            width: '40px',
-            height: '40px',
-            padding: '0.5rem',
-            fontSize: '1.05rem',
-            borderRadius: '50%',
-            cursor: 'pointer',
-            transition: 'background-color 0.2s',
-            "&:hover": {
-                color: theme.tertiary, 
-                backgroundColor: theme.secondary,
-            }
-        },
+        }
     }));
 
-    const classes = useStyles();
+    const ViewArr = styled(HiArrowRight)(({ theme }) => ({
+        color: theme.tertiary,
+        backgroundColor: theme.secondary70,
+        width: '40px',
+        height: '40px',
+        padding: '0.5rem',
+        fontSize: '1.05rem',
+        borderRadius: '50%',
+        cursor: 'pointer',
+        transition: 'background-color 0.2s',
+        "&:hover": {
+            color: theme.tertiary,
+            backgroundColor: theme.secondary,
+        }
+    }));
 
     return (
         <>
@@ -70,10 +67,10 @@ function Projects() {
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
-                                    <button className={classes.viewAllBtn}>
+                                    <ViewAllBtn>
                                         View All
-                                        <HiArrowRight className={classes.viewArr} />
-                                    </button>
+                                        <ViewArr />
+                                    </ViewAllBtn>
                                 </Link>
                             </div>
                         )}

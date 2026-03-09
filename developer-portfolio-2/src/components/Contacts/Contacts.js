@@ -384,32 +384,33 @@ function Contacts() {
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <FaYoutube aria-label='YouTube' />
+                                   e-label='YouTube' />
                                 </a>
                             )}
                             {socialsData.reddit && (
-                                <a
+                                <
+                                    className = {classes.socialIcon}a
                                     href={socialsData.reddit}
                                     target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
+                            ra                                    className={classes.socialIcon}
                                 >
-                                    <FaRedditAlien aria-label='Reddit' />
-                                </a>
+                            <FaRedditAlien aria-label='Reddit' />
+                        </>
                             )}
                             {socialsData.stackOverflow && (
-                                <a
+
+                            className = { classes.socialIcon } < a
                                     href={socialsData.stackOverflow}
-                                    target='_blank'
-                                    rel='noreferrer'
+                        ta                                   rel='noreferrer'
                                     className={classes.socialIcon}
-                                >
+                 >
                                     <FaStackOverflow aria-label='Stack Overflow' />
-                                </a>
-                            )}
+                    </>
+
+                    className={classes.socialIcon})}
                             {socialsData.codepen && (
                                 <a
-                                    href={socialsData.codepen}
+                            href={socia
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
