@@ -5,23 +5,23 @@
 
 version: 2
 updates:
-	- package-ecosystem: "pnpm" # See documentation for possible values
-		directory: "/developer-portfolio" # Location of package manifests
-		schedule:
-			interval: "weekly"
-	- package-ecosystem: "pnpm"
-		directory: "/developer-portfolio-2"
-		schedule:
-			interval: "weekly"
-	- package-ecosystem: "pnpm"
-		directory: "/github-portfolio"
-		schedule:
-			interval: "weekly"
-	- package-ecosystem: "pnpm"
-		directory: "/tedydev-portfolio"
-		schedule:
-			interval: "weekly"
-	- package-ecosystem: "pnpm"
-		directory: "/vivekneupane-portfolio"
-		schedule:
-			interval: "weekly"
+  - package-ecosystem: "pnpm" # See documentation for possible values
+    directory: "/developer-portfolio" # Location of package manifests
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pnpm"
+    directory: "/developer-portfolio-2"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pnpm"
+    directory: "/github-portfolio"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pnpm"
+    directory: "/tedydev-portfolio"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pnpm"
+    directory: "/vivekneupane-portfolio"
+    schedule:
+      interval: "weekly"
