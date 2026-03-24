@@ -5,7 +5,23 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/developer-portfolio" # Location of package manifests
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/developer-portfolio-2"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/github-portfolio"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/Tedydev-Portfolio"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/vivekneupane-portfolio"
     schedule:
       interval: "weekly"
