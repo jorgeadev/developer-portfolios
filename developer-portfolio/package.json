@@ -23,7 +23,7 @@
     "react-toastify": "11.0.5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.1",
+    "@tailwindcss/postcss": "^4.2.2",
     "autoprefixer": "10.4.27",
     "eslint": "10.0.3",
     "eslint-config-next": "16.1.6",
