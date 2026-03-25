@@ -20,7 +20,7 @@
     "emailjs-com": "3.2.0",
     "jquery": "3.7.1",
     "lottie-react": "2.4.1",
-    "next": "15.5.3",
+    "next": "15.5.14",
     "react": "19.1.1",
     "react-bootstrap": "2.10.10",
     "react-dom": "19.1.1",
@@ -37,7 +37,7 @@
     "eslint": "9.36.0",
     "eslint-config-next": "15.5.3",
     "gh-pages": "6.3.0",
-    "postcss": "8.5.6",
+    "postcss": "8.5.7",
     "sass": "1.93.1",
     "tailwindcss": "4.1.13"
   }
