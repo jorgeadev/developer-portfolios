@@ -1,27 +1,36 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
+# Dependabot configuration
+# Keeps GitHub Actions (workflow steps) and npm packages up to date.
+# Our custom update-deps.yml workflow handles npm updates for workspaces;
+# Dependabot covers the root package.json and GitHub Actions runners.
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
+
 updates:
-    - package-ecosystem: "npm" # See documentation for possible values
-      directory: "/developer-portfolio" # Location of package manifests
-      schedule:
-          interval: "weekly"
-    - package-ecosystem: "npm"
-      directory: "/developer-portfolio-2"
-      schedule:
-          interval: "weekly"
-    - package-ecosystem: "npm"
-      directory: "/github-portfolio"
-      schedule:
-          interval: "weekly"
-    - package-ecosystem: "npm"
-      directory: "/tedydev-portfolio"
-      schedule:
-          interval: "weekly"
-    - package-ecosystem: "npm"
-      directory: "/vivekneupane-portfolio"
-      schedule:
-          interval: "weekly"
+  # ── GitHub Actions ─────────────────────────────────────────────────────────
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "America/New_York"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "chore(ci)"
+
+  # ── Root package.json ───────────────────────────────────────────────────────
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"
+    ignore:
+      # Ignore workspace sub-packages (handled by our custom update-deps.mjs)
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch"]
