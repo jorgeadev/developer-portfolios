@@ -1,0 +1,15 @@
+# Dependencies
+**/node_modules
+
+# Build outputs
+**/.next
+**/out
+**/dist
+**/build
+**/.turbo
+
+# Lock files (never format these)
+pnpm-lock.yaml
+**/pnpm-lock.yaml
+**/yarn.lock
+**/package-lock.json

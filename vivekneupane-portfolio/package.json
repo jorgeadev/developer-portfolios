@@ -1,41 +1,41 @@
 {
-  "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@next/third-parties": "^16.2.1",
-    "axios": "^1.13.6",
-    "lottie-react": "^2.4.1",
-    "next": "^16.1.7",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-fast-marquee": "^1.6.5",
-    "react-google-recaptcha": "^3.1.0",
-    "react-icons": "^5.5.0",
-    "react-toastify": "^11.0.5",
-    "react-youtube": "^10.1.0"
-  },
-  "devDependencies": {
-    "@eslint/config-helpers": "0.5.2",
-    "@eslint/js": "9.15.0",
-    "@tailwindcss/postcss": "4.1.18",
-    "autoprefixer": "latest",
-    "eslint": "9.39.2",
-    "eslint-config-next": "latest",
-    "eslint-plugin-react": "7.37.5",
-    "globals": "17.4.0",
-    "postcss": "latest",
-    "sass": "^1.98.0",
-    "tailwindcss": "latest",
-    "typescript-eslint": "8.57.2"
-  }
+	"name": "vivekneupane-portfolio",
+	"description": "Portfolio of Abu Said",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3005",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix"
+	},
+	"dependencies": {
+		"@emailjs/browser": "^4.4.1",
+		"@next/third-parties": "16.2.1",
+		"axios": "1.14.0",
+		"lottie-react": "^2.4.1",
+		"next": "16.2.1",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"react-fast-marquee": "^1.6.5",
+		"react-google-recaptcha": "^3.1.0",
+		"react-icons": "^5.6.0",
+		"react-toastify": "^11.0.5",
+		"react-youtube": "^10.1.0"
+	},
+	"devDependencies": {
+		"@eslint/config-helpers": "0.5.3",
+		"@eslint/js": "10.0.1",
+		"@tailwindcss/postcss": "4.2.2",
+		"autoprefixer": "10.4.27",
+		"eslint": "10.1.0",
+		"eslint-config-next": "16.2.1",
+		"eslint-plugin-react": "7.37.5",
+		"globals": "17.4.0",
+		"postcss": "8.5.8",
+		"sass": "^1.98.0",
+		"tailwindcss": "4.2.2",
+		"typescript-eslint": "8.57.2"
+	}
 }

@@ -1,0 +1,53 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "▶ developer-portfolio (3001)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "pnpm dev:portfolio",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"name": "▶ developer-portfolio-2 (3002)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "pnpm dev:portfolio-2",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"name": "▶ github-portfolio (3003)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "pnpm dev:github",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"name": "▶ tedydev-portfolio (3004)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "pnpm dev:tedy",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"name": "▶ vivekneupane-portfolio (3005)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "pnpm dev:vivek",
+			"cwd": "${workspaceFolder}"
+		}
+	],
+	"compounds": [
+		{
+			"name": "▶▶ Run All Portfolios",
+			"configurations": [
+				"▶ developer-portfolio (3001)",
+				"▶ developer-portfolio-2 (3002)",
+				"▶ github-portfolio (3003)",
+				"▶ tedydev-portfolio (3004)",
+				"▶ vivekneupane-portfolio (3005)"
+			],
+			"stopAll": true
+		}
+	]
+}

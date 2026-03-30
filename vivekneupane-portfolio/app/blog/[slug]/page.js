@@ -10,7 +10,7 @@ async function getBlog(slug) {
 
 	const data = await res.json();
 	return data;
-};
+}
 
 async function BlogDetails({ params }) {
 	const slug = params.slug;
@@ -21,6 +21,6 @@ async function BlogDetails({ params }) {
 			<h1>{blog.title}</h1>
 		</div>
 	);
-};
+}
 
 export default BlogDetails;

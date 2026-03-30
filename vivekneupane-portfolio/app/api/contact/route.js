@@ -3,7 +3,9 @@ import { NextResponse } from "next/server";
 
 // Simple input sanitization to prevent XSS
 function sanitizeInput(input) {
-	if (typeof input !== "string") { return ""; }
+	if (typeof input !== "string") {
+		return "";
+	}
 	return input.replace(/[<>]/g, "").replace(/[&]/g, "&amp;").trim();
 }
 
@@ -13,9 +15,14 @@ function validateInputLengths(payload) {
 	const maxEmailLength = 100;
 	const maxMessageLength = 1000;
 
-	return payload.name && payload.name.length <= maxNameLength &&
-		payload.email && payload.email.length <= maxEmailLength &&
-		payload.message && payload.message.length <= maxMessageLength;
+	return (
+		payload.name &&
+		payload.name.length <= maxNameLength &&
+		payload.email &&
+		payload.email.length <= maxEmailLength &&
+		payload.message &&
+		payload.message.length <= maxMessageLength
+	);
 }
 
 export async function POST(request) {
@@ -23,27 +30,33 @@ export async function POST(request) {
 
 	// Validate input lengths
 	if (!validateInputLengths(payload)) {
-		return NextResponse.json({
-			success: false,
-			message: "Input validation failed"
-		}, { status: 400 });
+		return NextResponse.json(
+			{
+				success: false,
+				message: "Input validation failed",
+			},
+			{ status: 400 }
+		);
 	}
 
 	// Sanitize inputs
 	const sanitizedPayload = {
 		name: sanitizeInput(payload.name),
 		email: sanitizeInput(payload.email),
-		message: sanitizeInput(payload.message)
+		message: sanitizeInput(payload.message),
 	};
 
 	const token = process.env.TELEGRAM_BOT_TOKEN;
 	const chat_id = process.env.TELEGRAM_CHAT_ID;
 
 	if (!token || !chat_id) {
-		return NextResponse.json({
-			success: false,
-		}, { status: 200 });
-	};
+		return NextResponse.json(
+			{
+				success: false,
+			},
+			{ status: 200 }
+		);
+	}
 
 	try {
 		const url = `https://api.telegram.org/bot${token}/sendMessage`;
@@ -51,20 +64,26 @@ export async function POST(request) {
 
 		const res = await axios.post(url, {
 			text: message,
-			chat_id: process.env.TELEGRAM_CHAT_ID
+			chat_id: process.env.TELEGRAM_CHAT_ID,
 		});
 
 		if (res.data.ok) {
-			return NextResponse.json({
-				success: true,
-				message: "Message sent successfully!",
-			}, { status: 200 });
-		};
+			return NextResponse.json(
+				{
+					success: true,
+					message: "Message sent successfully!",
+				},
+				{ status: 200 }
+			);
+		}
 	} catch (error) {
 		console.log("Failed to send message: ", error.message);
-		return NextResponse.json({
-			message: "Message sending failed!",
-			success: false,
-		}, { status: 500 });
+		return NextResponse.json(
+			{
+				message: "Message sending failed!",
+				success: false,
+			},
+			{ status: 500 }
+		);
 	}
-};
+}

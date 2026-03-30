@@ -8,13 +8,11 @@ const AnimationLottie = ({ animationPath, width }) => {
 		autoplay: true,
 		animationData: animationPath,
 		style: {
-			width: width?width:"90%",
-		}
+			width: width ? width : "90%",
+		},
 	};
 
-	return (
-		<Lottie {...defaultOptions} />
-	);
+	return <Lottie {...defaultOptions} />;
 };
 
 export default AnimationLottie;

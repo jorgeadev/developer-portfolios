@@ -3,7 +3,6 @@
 import * as React from "react";
 
 function ProjectCard({ project }) {
-
 	return (
 		<div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-linear-to-r to-[#0a0d37] w-full">
 			<div className="flex flex-row">
@@ -38,17 +37,14 @@ function ProjectCard({ project }) {
 					<div className="ml-4 lg:ml-8 mr-2">
 						<span className=" text-white">tools:</span>
 						<span className="text-gray-400">{" ['"}</span>
-						{
-							project.tools.map((tag, i) => (
-								<React.Fragment key={i}>
-									<span className="text-amber-300">{tag}</span>
-									{
-										project.tools.length - 1 !== i &&
-                    <span className="text-gray-400">{"', '"}</span>
-									}
-								</React.Fragment>
-							))
-						}
+						{project.tools.map((tag, i) => (
+							<React.Fragment key={i}>
+								<span className="text-amber-300">{tag}</span>
+								{project.tools.length - 1 !== i && (
+									<span className="text-gray-400">{"', '"}</span>
+								)}
+							</React.Fragment>
+						))}
 						<span className="text-gray-400">{"],"}</span>
 					</div>
 					<div>
@@ -61,21 +57,35 @@ function ProjectCard({ project }) {
 						<span className="text-cyan-400">{" " + project.description}</span>
 						<span className="text-gray-400">,</span>
 					</div>
-					{
-						project.demo.length > 0 && <div className="ml-4 lg:ml-8 mr-2 mt-2">
+					{project.demo.length > 0 && (
+						<div className="ml-4 lg:ml-8 mr-2 mt-2">
 							<span className="text-white">{"Preview: {"}</span>
 							{project.demo.map((demo, index) => (
-								<div key={index} className="ml-4 lg:ml-8 mr-2 shadow-lg m-4 shadow-gray-800 p-1.5 rounded-lg">
-									<span className="text-cyan-400"><a href={demo} className='text-sm px-10 text-green-500 hover:text-blue-600' target={"_blank"} rel="noreferrer">{"Live Preview 🔗"}</a></span>
+								<div
+									key={index}
+									className="ml-4 lg:ml-8 mr-2 shadow-lg m-4 shadow-gray-800 p-1.5 rounded-lg"
+								>
+									<span className="text-cyan-400">
+										<a
+											href={demo}
+											className="text-sm px-10 text-green-500 hover:text-blue-600"
+											target={"_blank"}
+											rel="noreferrer"
+										>
+											{"Live Preview 🔗"}
+										</a>
+									</span>
 								</div>
 							))}
 						</div>
-					}
-					<div><span className="text-gray-400">{"};"}</span></div>
+					)}
+					<div>
+						<span className="text-gray-400">{"};"}</span>
+					</div>
 				</code>
 			</div>
 		</div>
 	);
-};
+}
 
 export default ProjectCard;

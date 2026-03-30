@@ -32,8 +32,8 @@ export default async function Home() {
 			<Skills />
 			<Projects />
 			<Education />
-			<Blog  />
+			<Blog />
 			<ContactSection />
 		</>
 	);
-};
+}

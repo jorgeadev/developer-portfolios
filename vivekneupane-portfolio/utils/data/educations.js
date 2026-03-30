@@ -11,5 +11,4 @@ export const educations = [
 		duration: "2013 - 2015",
 		institution: "Oxford College of Engineering",
 	},
-  
 ];

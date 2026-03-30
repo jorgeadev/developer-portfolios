@@ -11,7 +11,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 export const metadata = {
 	title: "I am Vivek Neupane - Software Developer",
 	description:
-    "I am Vivek Neupane. I am a developer/cto/co-founder/software engineer.I have more than 6 years of experience.I am sweet computer engineering graduate as well."
+		"I am Vivek Neupane. I am a developer/cto/co-founder/software engineer.I have more than 6 years of experience.I am sweet computer engineering graduate as well.",
 };
 
 export default function RootLayout({ children }) {

@@ -14,17 +14,23 @@ export async function POST(request) {
 				message: "Captcha verification success!!",
 				success: true,
 			});
-		};
+		}
 
-		return NextResponse.json({
-			error: "Captcha verification failed!",
-			success: false,
-		}, { status: 500 });
+		return NextResponse.json(
+			{
+				error: "Captcha verification failed!",
+				success: false,
+			},
+			{ status: 500 }
+		);
 	} catch (error) {
 		console.log("Failed to verify captcha: ", error.message);
-		return NextResponse.json({
-			error: "Captcha verification failed!",
-			success: false,
-		}, { status: 500 });
+		return NextResponse.json(
+			{
+				error: "Captcha verification failed!",
+				success: false,
+			},
+			{ status: 500 }
+		);
 	}
-};
+}

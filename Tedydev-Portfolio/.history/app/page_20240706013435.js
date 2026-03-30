@@ -1,5 +1,5 @@
-import HomeServer from './HomeServer';
+import HomeServer from "./HomeServer";
 
 export default function Home() {
-    return <HomeServer />;
+	return <HomeServer />;
 }

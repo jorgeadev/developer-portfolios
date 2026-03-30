@@ -20,14 +20,14 @@ A curated collection of open-source developer portfolio templates built with mod
 
 A professional, fully-featured portfolio template with contact form support, reCAPTCHA protection, and dev.to blog integration.
 
-| Property | Details |
-| :--- | :--- |
-| **Framework** | Next.js 16 + React 19 |
-| **Styling** | Tailwind CSS 4 |
+| Property         | Details                                                             |
+| :--------------- | :------------------------------------------------------------------ |
+| **Framework**    | Next.js 16 + React 19                                               |
+| **Styling**      | Tailwind CSS 4                                                      |
 | **Key Features** | Hero, About, Experience, Skills, Projects, Education, Blog, Contact |
-| **Email** | EmailJS (200 free emails/month) |
-| **Security** | Google reCAPTCHA on contact form |
-| **README** | [View →](./developer-portfolio/README.md) |
+| **Email**        | EmailJS (200 free emails/month)                                     |
+| **Security**     | Google reCAPTCHA on contact form                                    |
+| **README**       | [View →](./developer-portfolio/README.md)                           |
 
 ---
 
@@ -35,14 +35,14 @@ A professional, fully-featured portfolio template with contact form support, reC
 
 A React-based portfolio template offering **8 color themes** (Green, Black/White, Blue, Red, Orange, Purple, Pink, Yellow), each with light and dark mode variants.
 
-| Property | Details |
-| :--- | :--- |
-| **Framework** | React 19 |
-| **Styling** | Material-UI v4 + Tailwind CSS |
+| Property         | Details                                                    |
+| :--------------- | :--------------------------------------------------------- |
+| **Framework**    | React 19                                                   |
+| **Styling**      | Material-UI v4 + Tailwind CSS                              |
 | **Key Features** | Home, About, Resume, Services, Testimonials, Blog, Contact |
-| **Themes** | 8 themes × 2 modes (light/dark) = 16 variants |
-| **Contact Form** | SheetDB API (Google Sheets integration) |
-| **README** | [View →](./developer-portfolio-2/README.md) |
+| **Themes**       | 8 themes × 2 modes (light/dark) = 16 variants              |
+| **Contact Form** | SheetDB API (Google Sheets integration)                    |
+| **README**       | [View →](./developer-portfolio-2/README.md)                |
 
 ---
 
@@ -50,13 +50,13 @@ A React-based portfolio template offering **8 color themes** (Green, Black/White
 
 A Next.js portfolio that **automatically fetches and displays your GitHub profile data** using the GitHub API, with optional dev.to blog integration.
 
-| Property | Details |
-| :--- | :--- |
-| **Framework** | Next.js 15 + React 19 |
-| **Styling** | Tailwind CSS 4 |
+| Property         | Details                                                            |
+| :--------------- | :----------------------------------------------------------------- |
+| **Framework**    | Next.js 15 + React 19                                              |
+| **Styling**      | Tailwind CSS 4                                                     |
 | **Key Features** | GitHub profile, repositories, contributions calendar, dev.to blogs |
-| **Data Source** | GitHub API (no manual data entry needed) |
-| **README** | [View →](./github-portfolio/README.md) |
+| **Data Source**  | GitHub API (no manual data entry needed)                           |
+| **README**       | [View →](./github-portfolio/README.md)                             |
 
 ---
 
@@ -64,14 +64,14 @@ A Next.js portfolio that **automatically fetches and displays your GitHub profil
 
 A Next.js portfolio with smooth animations, a marquee ticker, Lottie animations, and an integrated email contact form.
 
-| Property | Details |
-| :--- | :--- |
-| **Framework** | Next.js 15 + React 19 |
-| **Styling** | Tailwind CSS + SASS |
+| Property         | Details                                                   |
+| :--------------- | :-------------------------------------------------------- |
+| **Framework**    | Next.js 15 + React 19                                     |
+| **Styling**      | Tailwind CSS + SASS                                       |
 | **Key Features** | Lottie animations, marquee, email contact, resume section |
-| **Email** | EmailJS |
-| **Animations** | Lottie, WowJS, Animate.css |
-| **README** | [View →](./Tedydev-Portfolio/README.md) |
+| **Email**        | EmailJS                                                   |
+| **Animations**   | Lottie, WowJS, Animate.css                                |
+| **README**       | [View →](./Tedydev-Portfolio/README.md)                   |
 
 ---
 
@@ -79,14 +79,14 @@ A Next.js portfolio with smooth animations, a marquee ticker, Lottie animations,
 
 A Next.js portfolio template featuring a YouTube integration alongside the standard email contact form and smooth animations.
 
-| Property | Details |
-| :--- | :--- |
-| **Framework** | Next.js 16 + React |
-| **Styling** | Tailwind CSS + SASS |
+| Property         | Details                                                 |
+| :--------------- | :------------------------------------------------------ |
+| **Framework**    | Next.js 16 + React                                      |
+| **Styling**      | Tailwind CSS + SASS                                     |
 | **Key Features** | Hero, About, Skills, Projects, Contact, YouTube section |
-| **Email** | EmailJS |
-| **Special** | YouTube video integration |
-| **README** | [View →](./vivekneupane-portfolio/README.md) |
+| **Email**        | EmailJS                                                 |
+| **Special**      | YouTube video integration                               |
+| **README**       | [View →](./vivekneupane-portfolio/README.md)            |
 
 ---
 

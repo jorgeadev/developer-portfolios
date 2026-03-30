@@ -1,24 +1,21 @@
-
-
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useZoomScreenEffect = () => {
 	useEffect(() => {
 		const adjustZoom = () => {
-			const screenWidthInInches =
-				window.screen.width / window.devicePixelRatio / 96;
+			const screenWidthInInches = window.screen.width / window.devicePixelRatio / 96;
 			if (screenWidthInInches >= 27) {
-				document.body.style.zoom = '150%';
+				document.body.style.zoom = "150%";
 			} else {
-				document.body.style.zoom = '100%';
+				document.body.style.zoom = "100%";
 			}
 		};
 
 		adjustZoom();
-		window.addEventListener('resize', adjustZoom);
+		window.addEventListener("resize", adjustZoom);
 
 		return () => {
-			window.removeEventListener('resize', adjustZoom);
+			window.removeEventListener("resize", adjustZoom);
 		};
 	}, []);
 };

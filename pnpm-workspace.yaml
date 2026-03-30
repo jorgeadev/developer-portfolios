@@ -1,2 +1,6 @@
 packages:
-  - '*'
+    - "developer-portfolio"
+    - "developer-portfolio-2"
+    - "github-portfolio"
+    - "tedydev-portfolio"
+    - "vivekneupane-portfolio"

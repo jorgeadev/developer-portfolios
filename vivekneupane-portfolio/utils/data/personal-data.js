@@ -23,5 +23,5 @@ export const personalData = {
 	stackOverflow: "https://www.linkedin.com/in/vivek-neupane-b99259194/",
 	leetcode: "https://www.linkedin.com/in/vivek-neupane-b99259194/",
 	devUsername: "said7388",
-	resume: "https://drive.google.com/file/d/1oEDZEvMnosKyWvhIso1Lj-eJDizu8c1c/view?usp=sharing"
+	resume: "https://drive.google.com/file/d/1oEDZEvMnosKyWvhIso1Lj-eJDizu8c1c/view?usp=sharing",
 };
