@@ -1,0 +1,88 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+
+	// Disable VS Code's built-in JSON formatter — it ignores .prettierrc and forces 2-space indent
+	"json.format.enable": false,
+
+	// Per-language: always use Prettier (prevents VS Code built-in JSON formatter taking over)
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+
+	// pnpm workspace
+	"npm.packageManager": "pnpm",
+
+	// Hide build/dependency noise in sidebar
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/.next": true,
+		"**/out": true,
+		"**/dist": true,
+		"**/build": true,
+		"**/.turbo": true
+	},
+
+	// ESLint - resolve per project
+	"eslint.workingDirectories": [
+		{ "directory": "./developer-portfolio", "changeProcessCWD": true },
+		{ "directory": "./developer-portfolio-2", "changeProcessCWD": true },
+		{ "directory": "./github-portfolio", "changeProcessCWD": true },
+		{ "directory": "./tedydev-portfolio", "changeProcessCWD": true },
+		{ "directory": "./vivekneupane-portfolio", "changeProcessCWD": true }
+	],
+
+	// TypeScript - use workspace versions
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+
+	// Search exclusions
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/.next": true,
+		"**/out": true,
+		"**/dist": true,
+		"**/build": true,
+		"**/pnpm-lock.yaml": true,
+		"**/yarn.lock": true
+	}
+}

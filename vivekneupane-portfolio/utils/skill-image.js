@@ -1,6 +1,3 @@
-
-
-
 export const skillsImage = (skill) => {
 	const skillID = skill.toLowerCase();
 	switch (skillID) {

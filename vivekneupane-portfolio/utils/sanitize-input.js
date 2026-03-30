@@ -2,7 +2,7 @@ export function sanitizeInput(input) {
 	if (typeof input !== "string") {
 		return "";
 	}
-  
+
 	// Remove HTML tags and encode special characters to prevent XSS
 	return input
 		.replace(/[<>]/g, "") // Remove angle brackets
@@ -15,6 +15,6 @@ export function sanitizeContactForm(formData) {
 	return {
 		name: sanitizeInput(formData.name),
 		email: sanitizeInput(formData.email),
-		message: sanitizeInput(formData.message)
+		message: sanitizeInput(formData.message),
 	};
 }

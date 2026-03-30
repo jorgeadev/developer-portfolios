@@ -11,54 +11,49 @@ import Skills from "./components/homepage/skills";
 import { Analytics } from "@vercel/analytics/react";
 
 async function getData() {
-  const res = await fetch(
-    `https://dev.to/api/articles?username=${personalData.devUsername}`
-  );
+	const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`);
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
+	if (!res.ok) {
+		throw new Error("Failed to fetch data");
+	}
 
-  const data = await res.json();
+	const data = await res.json();
 
-  const filtered = data
-    .filter((item) => item?.cover_image)
-    .sort(() => Math.random() - 0.5);
+	const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
 
-  return filtered;
+	return filtered;
 }
 
-
 function adjustZoom() {
-  if (window.screen.width >= 2560) {
-    document.body.style.zoom = "150%";
-  } else {
-    document.body.style.zoom = "100%";
-  }
+	if (window.screen.width >= 2560) {
+		document.body.style.zoom = "150%";
+	} else {
+		document.body.style.zoom = "100%";
+	}
 }
 
 adjustZoom();
-window.addEventListener('resize', adjustZoom);
+window.addEventListener("resize", adjustZoom);
 
 // Cleanup event listener on component unmount
 return () => {
-  window.removeEventListener('resize', adjustZoom);
+	window.removeEventListener("resize", adjustZoom);
 };
 
 export default async function Home() {
-  const blogs = await getData();
+	const blogs = await getData();
 
-  return (
-    <>
-      <LoadingBoxes />
-      <HeroSection />
-      <AboutSection />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Education />
-      <Blog blogs={blogs} />
-      <ContactSection />
-    </>
-  );
+	return (
+		<>
+			<LoadingBoxes />
+			<HeroSection />
+			<AboutSection />
+			<Experience />
+			<Skills />
+			<Projects />
+			<Education />
+			<Blog blogs={blogs} />
+			<ContactSection />
+		</>
+	);
 }

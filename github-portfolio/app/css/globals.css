@@ -5,16 +5,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: rgb(211, 216, 232);
+	--foreground-rgb: rgb(211, 216, 232);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: #0d1224;
+	color: rgb(var(--foreground-rgb));
+	background-color: #0d1224;
 }

@@ -60,7 +60,8 @@ git push -u origin <branch name>
 ### Keeping your fork up-to-date
 
 1. Add this repository as an upstream.
-<!-- add name of your upstream repo -->
+ <!-- add name of your upstream repo -->
+
 ```bash
 git remote add upstream https://github.com/hhhrrrttt222111/developer-portfolio.git
 ```
@@ -70,4 +71,3 @@ git remote add upstream https://github.com/hhhrrrttt222111/developer-portfolio.g
 ```bash
 git pull upstream master
 ```
-
