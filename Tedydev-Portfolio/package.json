@@ -7,7 +7,7 @@
 		"dev": "next dev -p 3004",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
+		"lint": "prettier --check \"app/**/*.{js,jsx,css}\" \"utils/**/*.js\" \"*.{js,json}\"",
 		"deploy": "gh-pages -d out",
 		"predeploy": "npm run build && npm run export"
 	},
@@ -34,10 +34,9 @@
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.2.2",
 		"autoprefixer": "10.4.27",
-		"eslint": "10.1.0",
-		"eslint-config-next": "16.2.1",
 		"gh-pages": "6.3.0",
 		"postcss": "8.5.8",
+		"prettier": "3.5.3",
 		"sass": "1.98.0",
 		"tailwindcss": "4.2.2"
 	}

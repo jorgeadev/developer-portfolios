@@ -1,7 +1,7 @@
-import hotel from "/public/lottie/hotel.json";
-import urms from "/public/lottie/urms.json";
-import bdmpro from "/public/lottie/bdmpro.json";
-import eduvision from "/public/lottie/edu.json";
+import hotel from "../../public/lottie/hotel.json";
+import urms from "../../public/lottie/urms.json";
+import bdmpro from "../../public/lottie/bdmpro.json";
+import eduvision from "../../public/lottie/edu.json";
 
 export const projectsData = [
 	{

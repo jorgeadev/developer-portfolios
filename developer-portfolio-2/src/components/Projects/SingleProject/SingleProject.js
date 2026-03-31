@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import { FaPlay, FaCode } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
+const Fade = ({ children }) => <>{children}</>;
 
 import placeholder from "../../../assets/png/placeholder.png";
 import "./SingleProject.css";

@@ -5,14 +5,14 @@ module.exports = {
 		includePaths: [path.join(__dirname, "styles")],
 	},
 	images: {
-		domains: [
-			"media.dev.to",
-			"avatars.githubusercontent.com",
-			"github-readme-stats.vercel.app",
-			"github-readme-streak-stats.herokuapp.com",
-			"stardev.io",
-			"github-profile-summary-cards.vercel.app",
-			"github-profile-trophy.vercel.app",
+		remotePatterns: [
+			{ hostname: "media.dev.to" },
+			{ hostname: "avatars.githubusercontent.com" },
+			{ hostname: "github-readme-stats.vercel.app" },
+			{ hostname: "github-readme-streak-stats.herokuapp.com" },
+			{ hostname: "stardev.io" },
+			{ hostname: "github-profile-summary-cards.vercel.app" },
+			{ hostname: "github-profile-trophy.vercel.app" },
 		],
 		dangerouslyAllowSVG: true,
 	},

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
-import experience from "/public/lottie/study.json";
+import experience from "@/public/lottie/study.json";
 
 function Experience() {
 	return (
@@ -16,6 +16,7 @@ function Experience() {
 				width={1572}
 				height={795}
 				className="absolute top-0 -z-10"
+				style={{ width: "auto", height: "auto" }}
 			/>
 
 			<div className="flex justify-center my-5 lg:py-8">

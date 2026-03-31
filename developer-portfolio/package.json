@@ -7,7 +7,7 @@
 		"dev": "next dev -p 3001",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "prettier --check \"app/**/*.{js,jsx,css}\" \"utils/**/*.js\" \"*.{js,json}\""
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
@@ -25,9 +25,8 @@
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.2.2",
 		"autoprefixer": "10.4.27",
-		"eslint": "10.1.0",
-		"eslint-config-next": "16.2.1",
 		"postcss": "8.5.8",
+		"prettier": "3.5.3",
 		"tailwindcss": "4.2.2"
 	},
 	"pnpm": {

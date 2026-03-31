@@ -7,8 +7,8 @@ import Navbar from "./components/navbar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 
-import "./css/card.scss";
-import "./css/globals.scss";
+import "./css/card.css";
+import "./css/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

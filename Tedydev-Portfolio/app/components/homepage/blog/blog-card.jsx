@@ -15,6 +15,7 @@ function BlogCard({ blog }) {
 					width={1920}
 					alt=""
 					className="h-full w-full group-hover:scale-110 transition-all duration-300"
+					style={{ width: "auto", height: "auto" }}
 				/>
 			</div>
 			<div className="p-2 sm:p-3 flex flex-col">

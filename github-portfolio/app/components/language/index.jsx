@@ -18,6 +18,7 @@ function GitLanguage() {
 							height={560}
 							alt="github repos-per-language"
 							className="rounded-lg lg:h-64 w-full bg-primary-bg"
+							unoptimized
 						/>
 					</GlowCard>
 
@@ -28,6 +29,7 @@ function GitLanguage() {
 							height={560}
 							alt="github most-commit-language"
 							className="rounded-lg lg:h-64 w-full bg-primary-bg"
+							unoptimized
 						/>
 					</GlowCard>
 				</>
@@ -40,6 +42,7 @@ function GitLanguage() {
 							height={560}
 							alt="github top-langs"
 							className="rounded-lg md:h-52 lg:h-64 w-full bg-primary-bg"
+							unoptimized
 						/>
 					</GlowCard>
 				</div>

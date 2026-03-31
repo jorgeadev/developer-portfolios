@@ -1,5 +1,3 @@
-// @flow strict
-
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 
@@ -18,11 +16,11 @@ function AboutSection() {
 					<p className="text-gray-200 text-sm lg:text-lg">{personalData.description}</p>
 				</div>
 				<div className="avt-container">
-					<div class="light-button">
-						<button class="bt">
-							<div class="light-holder">
-								<div class="dot"></div>
-								<div class="light"></div>
+					<div className="light-button">
+						<button className="bt">
+							<div className="light-holder">
+								<div className="dot"></div>
+								<div className="light"></div>
 							</div>
 						</button>
 					</div>
@@ -33,6 +31,7 @@ function AboutSection() {
 							height={280}
 							alt="Tedy Dev"
 							className="avt"
+							style={{ width: "auto", height: "auto" }}
 						/>
 					</div>
 				</div>

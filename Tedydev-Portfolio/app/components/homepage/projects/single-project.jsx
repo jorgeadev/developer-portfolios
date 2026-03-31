@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCode, FaPlay } from "react-icons/fa";
-import placeholder from "/public/png/placeholder.png";
+import placeholder from "@/public/png/placeholder.png";
 
 const SingleProject = ({ project }) => {
 	const { name, description, code, tags, demo, image, features } = project;
@@ -180,6 +180,7 @@ const SingleProject = ({ project }) => {
 						width={1080}
 						height={720}
 						className="w-80 h-64 transition-opacity duration-[0.7s] delay-[0.3s] rounded-lg group-hover:opacity-0"
+						style={{ width: "auto", height: "auto" }}
 					/>
 				</div>
 				<div className="flex items-center justify-between w-full">

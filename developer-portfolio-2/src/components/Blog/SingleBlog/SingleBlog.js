@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+const Fade = ({ children }) => <>{children}</>;
 
 import placeholder from "../../../assets/png/placeholder.png";
 import "./SingleBlog.css";

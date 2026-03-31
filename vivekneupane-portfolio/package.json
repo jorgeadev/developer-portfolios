@@ -7,8 +7,8 @@
 		"dev": "next dev -p 3005",
 		"build": "next build",
 		"start": "next start",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix"
+		"lint": "prettier --check \"app/**/*.{js,jsx,css}\" \"utils/**/*.js\" \"*.{js,json}\"",
+		"lint:fix": "prettier --write \"app/**/*.{js,jsx,css}\" \"utils/**/*.js\" \"*.{js,json}\""
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
@@ -25,17 +25,11 @@
 		"react-youtube": "^10.1.0"
 	},
 	"devDependencies": {
-		"@eslint/config-helpers": "0.5.3",
-		"@eslint/js": "10.0.1",
 		"@tailwindcss/postcss": "4.2.2",
 		"autoprefixer": "10.4.27",
-		"eslint": "10.1.0",
-		"eslint-config-next": "16.2.1",
-		"eslint-plugin-react": "7.37.5",
-		"globals": "17.4.0",
 		"postcss": "8.5.8",
+		"prettier": "3.5.3",
 		"sass": "^1.98.0",
-		"tailwindcss": "4.2.2",
-		"typescript-eslint": "8.57.2"
+		"tailwindcss": "4.2.2"
 	}
 }

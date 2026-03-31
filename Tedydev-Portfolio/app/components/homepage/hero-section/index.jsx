@@ -20,7 +20,8 @@ function HeroSection() {
 				className="absolute -top-[98px] -z-10"
 				srcSet="/hero-small.svg 640w, /hero-medium.svg 1024w, /hero.svg 1572w"
 				sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1572px"
-				loading="lazy"
+				loading="eager"
+				style={{ width: "auto", height: "auto" }}
 			/>
 
 			<div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
@@ -31,9 +32,9 @@ function HeroSection() {
 							This is <span className=" text-name">{personalData.name}</span>
 						</div>
 						{` I'm a `}
-						<div class="gradientText">
+						<div className="gradientText">
 							<div
-								class="job"
+								className="job"
 								data-job1="{Developer.}"
 								data-job2="{Full-Stack.}"
 							></div>

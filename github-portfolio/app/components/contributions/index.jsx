@@ -1,7 +1,12 @@
-// @flow strict
+"use client";
 
-import GitHubCalendar from "react-github-calendar";
+import dynamic from "next/dynamic";
 import SectionTitle from "../helper/section-title";
+
+const GitHubCalendar = dynamic(
+	() => import("react-github-calendar").then((mod) => mod.GitHubCalendar),
+	{ ssr: false }
+);
 
 function Contributions() {
 	return (

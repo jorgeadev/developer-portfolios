@@ -18,6 +18,7 @@ function Rank() {
 							height={520}
 							alt="github streak"
 							className="rounded-lg md:h-52 lg:h-60 w-full bg-primary-bg"
+							unoptimized
 						/>
 					</GlowCard>
 					<GlowCard identifier="productive-time">
@@ -27,6 +28,7 @@ function Rank() {
 							height={560}
 							alt="github productive-time"
 							className="rounded-lg md:h-52 lg:h-60 w-full bg-primary-bg"
+							unoptimized
 						/>
 					</GlowCard>
 				</>
@@ -38,6 +40,7 @@ function Rank() {
 						height={520}
 						alt="github global"
 						className="rounded-lg"
+						unoptimized
 					/>
 					<Image
 						src={`https://stardev.io/developers/${userData.githubUser}/badge/languages/locality.svg`}
@@ -45,6 +48,7 @@ function Rank() {
 						height={520}
 						alt="github locality"
 						className="rounded-lg"
+						unoptimized
 					/>
 				</>
 			</div>
