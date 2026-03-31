@@ -25,6 +25,6 @@
 		"update-deps:audit": "node scripts/update-deps.mjs --audit"
 	},
 	"devDependencies": {
-		"prettier": "3.5.3"
+		"prettier": "3.8.1"
 	}
 }
