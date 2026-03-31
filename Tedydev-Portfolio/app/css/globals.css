@@ -494,7 +494,7 @@ body::-webkit-scrollbar-track {
 	color: #eff3f4;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	text-decoration: none; // Loại bỏ gạch chân mặc định cho phần tử
+	text-decoration: none; /* Loại bỏ gạch chân mặc định cho phần tử */
 	&:hover {
 		background-color: #231d4b;
 		color: violet;
@@ -604,7 +604,7 @@ body::-webkit-scrollbar-track {
 	justify-content: center;
 	height: 100%;
 	width: 100%;
-	// background-color: #0a0a0a;
+	/* background-color: #0a0a0a; */
 	border-radius: 5px;
 	color: #0f0f0f;
 	font-weight: 700;
@@ -622,7 +622,7 @@ body::-webkit-scrollbar-track {
 .light-button button.bt .light-holder {
 	position: absolute;
 	height: 250px;
-	// width: 280px;
+	/* width: 280px; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -735,7 +735,7 @@ body::-webkit-scrollbar-track {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// width: 25%;
+	/* width: 25%; */
 	color: whitesmoke;
 	font-size: 24px;
 	text-decoration: none;

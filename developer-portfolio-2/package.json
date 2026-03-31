@@ -32,13 +32,8 @@
 		"start": "cross-env PORT=3002 react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
+		"eject": "react-scripts eject",
+		"lint": "prettier --check \"src/**/*.{js,jsx,css}\" \"*.{js,json}\""
 	},
 	"browserslist": {
 		"production": [
@@ -53,9 +48,8 @@
 		]
 	},
 	"devDependencies": {
-		"cross-env": "10.1.0",
-		"eslint-config-react-app": "7.0.1",
-		"eslint-plugin-react": "7.37.5"
+		"cross-env": "7.0.3",
+		"prettier": "3.5.3"
 	},
 	"pnpm": {
 		"overrides": {

@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import AnimationLottie from "./animation-lottie";
-import experience from "/public/lottie/study.json";
+import experience from "@/public/lottie/study.json";
 
 const CenteredAnimation = () => {
 	const animationRef = useRef(null);

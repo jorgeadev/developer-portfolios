@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Fade from "react-reveal/Fade";
+const Fade = ({ children }) => <>{children}</>;
 
 import { ThemeContext } from "../../../contexts/ThemeContext";
 

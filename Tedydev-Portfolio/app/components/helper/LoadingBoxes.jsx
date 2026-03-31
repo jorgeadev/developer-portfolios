@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "animate.css";
-import "../../css/globals.scss";
+import "../../css/globals.css";
 
 const LoadingBoxes = () => {
 	const [isVisible, setIsVisible] = useState(true);

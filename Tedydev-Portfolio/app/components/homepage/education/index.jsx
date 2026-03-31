@@ -5,7 +5,7 @@ import { educations } from "@/utils/data/educations";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
-import lottieFile from "/public/lottie/code.json";
+import lottieFile from "@/public/lottie/code.json";
 
 function Education() {
 	return (
@@ -16,6 +16,7 @@ function Education() {
 				width={1572}
 				height={795}
 				className="absolute top-0 -z-10"
+				style={{ width: "auto", height: "auto" }}
 			/>
 			<div className="flex justify-center -translate-y-[1px]">
 				<div className="w-3/4">

@@ -1,5 +1,3 @@
-// @flow strict
-
 import { skillsData } from "@/utils/data/skills";
 import { skillsImage } from "@/utils/skill-image";
 import Image from "next/image";
@@ -55,6 +53,7 @@ function Skills() {
 											width={40}
 											height={40}
 											className="h-full w-auto rounded-lg"
+											style={{ width: "auto", height: "auto" }}
 										/>
 									</div>
 									<p className="text-white text-sm sm:text-lg">{skill}</p>

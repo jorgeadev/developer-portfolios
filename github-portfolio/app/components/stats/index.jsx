@@ -19,6 +19,7 @@ function GitStats() {
 								height={520}
 								alt="github profile-details"
 								className="rounded-lg "
+								unoptimized
 							/>
 						</div>
 					</GlowCard>
@@ -31,6 +32,7 @@ function GitStats() {
 							width={1080}
 							height={520}
 							alt="github stats"
+							unoptimized
 						/>
 					</GlowCard>
 					<GlowCard identifier="github-stats-2">
@@ -40,6 +42,7 @@ function GitStats() {
 							height={520}
 							alt="github stats"
 							className="rounded-lg"
+							unoptimized
 						/>
 					</GlowCard>
 				</>

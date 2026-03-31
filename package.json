@@ -14,11 +14,15 @@
 		"build:github": "pnpm --filter github-portfolio build",
 		"build:tedy": "pnpm --filter tedydev-portfolio build",
 		"build:vivek": "pnpm --filter vivekneupane-portfolio build",
-		"build:all": "pnpm --filter '*' build",
-		"lint:all": "pnpm --filter '*' lint",
+		"build:all": "pnpm -r build",
+		"lint:all": "pnpm -r lint",
 		"install:all": "pnpm install",
 		"format": "prettier --write .",
-		"format:check": "prettier --check ."
+		"format:check": "prettier --check .",
+		"update-deps": "node scripts/update-deps.mjs",
+		"update-deps:check": "node scripts/update-deps.mjs --dry-run",
+		"update-deps:major": "node scripts/update-deps.mjs --major",
+		"update-deps:audit": "node scripts/update-deps.mjs --audit"
 	},
 	"devDependencies": {
 		"prettier": "3.5.3"

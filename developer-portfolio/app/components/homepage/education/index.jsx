@@ -15,10 +15,11 @@ function Education() {
 				width={1572}
 				height={795}
 				className="absolute top-0 -z-10"
+				loading="eager"
 			/>
-			<div className="flex justify-center -translate-y-[1px]">
+			<div className="flex justify-center -translate-y-px">
 				<div className="w-3/4">
-					<div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+					<div className="h-px bg-linear-to-r from-transparent via-violet-500 to-transparent  w-full" />
 				</div>
 			</div>
 

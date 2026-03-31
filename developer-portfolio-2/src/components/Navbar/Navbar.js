@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import { NavHashLink as NavLink } from "react-router-hash-link";
-import Fade from "react-reveal/Fade";
+import { HashLink as NavLink } from "react-router-hash-link";
+const Fade = ({ children }) => <>{children}</>;
 import { IoMenuSharp, IoHomeSharp } from "react-icons/io5";
 import { HiDocumentText } from "react-icons/hi";
 import { BsFillGearFill } from "react-icons/bs";
