@@ -20,7 +20,7 @@
 		"emailjs-com": "3.2.0",
 		"jquery": "3.7.1",
 		"lottie-react": "2.4.1",
-		"next": "16.2.4",
+		"next": "16.2.6",
 		"react": "19.2.4",
 		"react-bootstrap": "2.10.10",
 		"react-dom": "19.2.4",
@@ -35,7 +35,7 @@
 		"@tailwindcss/postcss": "4.2.2",
 		"autoprefixer": "10.4.27",
 		"gh-pages": "6.3.0",
-		"postcss": "8.5.10",
+		"postcss": "8.5.11",
 		"prettier": "3.5.3",
 		"sass": "1.98.0",
 		"tailwindcss": "4.2.2"
