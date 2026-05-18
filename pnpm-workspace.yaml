@@ -1,6 +1,11 @@
 packages:
-    - "developer-portfolio"
-    - "developer-portfolio-2"
-    - "github-portfolio"
-    - "tedydev-portfolio"
-    - "vivekneupane-portfolio"
+  - "developer-portfolio"
+  - "developer-portfolio-2"
+  - "github-portfolio"
+  - "tedydev-portfolio"
+  - "vivekneupane-portfolio"
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  core-js-pure: true
+  sharp: true
