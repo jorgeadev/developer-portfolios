@@ -2,8 +2,9 @@ name: ⬆️ Update Dependencies
 
 on:
   schedule:
-    - cron: "0 8 * * 1"   # Every Monday at 08:00 UTC
-  workflow_dispatch:        # Allow manual trigger from GitHub UI
+    - cron: "0 8 * * 1" # Every Monday at 08:00 UTC
+  workflow_dispatch:
+    # Allow manual trigger from GitHub UI
     inputs:
       allow_major:
         description: "Allow major version bumps"
@@ -36,7 +37,7 @@ jobs:
           node-version: "24"
           # cache: "pnpm"
 
-      # ── Check if any updates are available (dry-run) ──────────────────────
+          # ── Check if any updates are available (dry-run) ──────────────────────
       - name: Check for outdated packages (dry-run)
         id: check
         run: |
@@ -63,7 +64,7 @@ jobs:
 
       - name: Run security audit
         if: steps.check.outputs.has_updates == 'true'
-        run: pnpm audit || true   # don't fail the job on known vulns (CRA)
+        run: pnpm audit || true # don't fail the job on known vulns (CRA)
 
       - name: Capture audit summary
         if: steps.check.outputs.has_updates == 'true'
