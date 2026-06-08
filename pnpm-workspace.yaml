@@ -9,3 +9,11 @@ allowBuilds:
   core-js: true
   core-js-pure: true
   sharp: true
+minimumReleaseAgeExclude:
+  - '@mui/core-downloads-tracker@9.1.0'
+  - '@mui/icons-material@9.1.0'
+  - '@mui/material@9.1.0'
+  - '@mui/private-theming@9.1.0'
+  - '@mui/styled-engine@9.1.0'
+  - '@mui/system@9.1.0'
+  - '@mui/utils@9.1.0'
