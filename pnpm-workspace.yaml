@@ -17,3 +17,4 @@ minimumReleaseAgeExclude:
   - '@mui/styled-engine@9.1.0'
   - '@mui/system@9.1.0'
   - '@mui/utils@9.1.0'
+  - axios@1.18.0
