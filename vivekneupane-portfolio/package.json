@@ -13,7 +13,7 @@
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
 		"@next/third-parties": "16.2.1",
-		"axios": "1.17.0",
+		"axios": "1.18.0",
 		"lottie-react": "^2.4.1",
 		"next": "16.2.6",
 		"react": "19.2.4",
@@ -29,7 +29,7 @@
 		"autoprefixer": "10.5.0",
 		"postcss": "8.5.14",
 		"prettier": "3.8.1",
-		"sass": "^1.100.0",
+		"sass": "^1.101.0",
 		"tailwindcss": "4.3.0"
 	}
 }
