@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
 		"@next/third-parties": "16.2.1",
-		"axios": "1.16.0",
+		"axios": "1.18.1",
 		"lottie-react": "2.4.1",
 		"next": "16.2.6",
 		"react": "19.2.4",
