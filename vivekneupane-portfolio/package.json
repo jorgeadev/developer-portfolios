@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.3.0",
 		"autoprefixer": "10.5.0",
-		"postcss": "8.5.19",
+		"postcss": "8.5.23",
 		"prettier": "3.9.5",
 		"sass": "^1.102.0",
 		"tailwindcss": "4.3.0"
