@@ -10,8 +10,8 @@
 		"@testing-library/jest-dom": "^7.0.0",
 		"@testing-library/react": "^16.3.2",
 		"@testing-library/user-event": "^14.6.1",
-		"axios": "1.19.0",
-		"postcss": "8.5.23",
+		"axios": "1.18.0",
+		"postcss": "8.5.24",
 		"react": "19.2.4",
 		"react-dom": "19.2.4",
 		"react-fast-marquee": "^1.6.5",
@@ -26,7 +26,7 @@
 		"tailwindcss": "4.3.0",
 		"validator": "^13.15.26",
 		"web-vitals": "6.1.0",
-		"webpack-dev-server": "^6.0.0"
+		"webpack-dev-server": "^5.2.6"
 	},
 	"scripts": {
 		"start": "cross-env PORT=3002 react-scripts start",
