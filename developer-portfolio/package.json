@@ -12,9 +12,9 @@
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
 		"@next/third-parties": "16.3.0",
-		"axios": "1.20.0",
+		"axios": "1.18.0",
 		"lottie-react": "2.4.1",
-		"next": "16.3.3",
+		"next": "16.2.11",
 		"react": "19.2.4",
 		"react-dom": "19.2.4",
 		"react-fast-marquee": "^1.6.5",
@@ -25,7 +25,7 @@
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.3.0",
 		"autoprefixer": "10.5.0",
-		"postcss": "8.5.24",
+		"postcss": "8.5.25",
 		"prettier": "3.9.5",
 		"tailwindcss": "4.3.0"
 	},
