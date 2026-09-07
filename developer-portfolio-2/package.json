@@ -7,24 +7,24 @@
 		"@emotion/styled": "11.14.1",
 		"@mui/icons-material": "9.4.0",
 		"@mui/material": "9.4.0",
-		"@testing-library/jest-dom": "^7.0.0",
-		"@testing-library/react": "^16.3.2",
-		"@testing-library/user-event": "^14.6.1",
+		"@testing-library/jest-dom": "^7.0.1",
+		"@testing-library/react": "^16.3.3",
+		"@testing-library/user-event": "^14.6.7",
 		"axios": "1.20.0",
-		"postcss": "8.5.24",
-		"react": "19.2.4",
-		"react-dom": "19.2.4",
+		"postcss": "8.5.28",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
 		"react-fast-marquee": "^1.6.5",
 		"react-helmet": "^6.1.0",
 		"react-icons": "^5.7.0",
 		"react-reveal": "^1.2.2",
-		"react-router-dom": "7.18.0",
+		"react-router-dom": "7.18.3",
 		"react-router-hash-link": "^2.4.3",
 		"react-scripts": "^5.0.1",
 		"react-slick": "0.31.0",
 		"slick-carousel": "^1.8.1",
-		"tailwindcss": "4.3.0",
-		"validator": "^13.15.26",
+		"tailwindcss": "4.3.3",
+		"validator": "^13.15.35",
 		"web-vitals": "6.2.1",
 		"webpack-dev-server": "^5.2.6"
 	},
@@ -49,7 +49,7 @@
 	},
 	"devDependencies": {
 		"cross-env": "10.1.0",
-		"prettier": "3.9.5"
+		"prettier": "3.9.6"
 	},
 	"pnpm": {
 		"overrides": {
