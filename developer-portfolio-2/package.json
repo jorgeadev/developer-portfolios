@@ -10,7 +10,7 @@
 		"@testing-library/jest-dom": "^7.0.1",
 		"@testing-library/react": "^16.3.3",
 		"@testing-library/user-event": "^14.6.7",
-		"axios": "1.20.0",
+		"axios": "1.18.0",
 		"postcss": "8.5.28",
 		"react": "19.2.8",
 		"react-dom": "19.2.8",
