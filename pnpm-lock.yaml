@@ -193,7 +193,7 @@ importers:
         version: 4.4.1
       '@next/third-parties':
         specifier: 16.3.4
-        version: 16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0))(react@19.3.0)
+        version: 16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0))(react@19.3.0)
       axios:
         specifier: 1.20.0
         version: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
@@ -202,7 +202,7 @@ importers:
         version: 3.1.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       next:
         specifier: 16.3.4
-        version: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0)
+        version: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0)
       react:
         specifier: 19.3.0
         version: 19.3.0
@@ -238,8 +238,8 @@ importers:
         specifier: 3.9.6
         version: 3.9.6
       sass:
-        specifier: ^1.104.0
-        version: 1.104.0
+        specifier: ^1.105.0
+        version: 1.105.0
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -6250,6 +6250,11 @@ packages:
     engines: {node: '>=20.19.0'}
     hasBin: true
 
+  sass@1.105.0:
+    resolution: {integrity: sha512-4EjSuRTyG8M4yRXXY1PT9OUV5zz23xBxJkbIAprohKHqf6HOU4MCpE3U3vAC+iO1gxobBjESNbcj8rYAQZWnyA==}
+    engines: {node: '>=20.19.0'}
+    hasBin: true
+
   sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
 
@@ -8980,6 +8985,12 @@ snapshots:
   '@next/third-parties@16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0))(react@19.3.0)':
     dependencies:
       next: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0)
+      react: 19.3.0
+      third-party-capital: 1.0.20
+
+  '@next/third-parties@16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0))(react@19.3.0)':
+    dependencies:
+      next: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0)
       react: 19.3.0
       third-party-capital: 1.0.20
 
@@ -12894,6 +12905,32 @@ snapshots:
       - '@types/node'
       - babel-plugin-macros
 
+  next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0):
+    dependencies:
+      '@next/env': 16.3.4
+      '@swc/helpers': 0.5.23
+      baseline-browser-mapping: 2.11.5
+      caniuse-lite: 1.0.30001806
+      postcss: 8.5.23
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+      styled-jsx: 5.1.6(@babel/core@7.29.0(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@19.3.0)
+    optionalDependencies:
+      '@next/swc-darwin-arm64': 16.3.4
+      '@next/swc-darwin-x64': 16.3.4
+      '@next/swc-linux-arm64-gnu': 16.3.4
+      '@next/swc-linux-arm64-musl': 16.3.4
+      '@next/swc-linux-x64-gnu': 16.3.4
+      '@next/swc-linux-x64-musl': 16.3.4
+      '@next/swc-win32-arm64-msvc': 16.3.4
+      '@next/swc-win32-x64-msvc': 16.3.4
+      sass: 1.105.0
+      sharp: 0.35.4(@types/node@26.1.2)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@types/node'
+      - babel-plugin-macros
+
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
@@ -14151,6 +14188,15 @@ snapshots:
       sass: 1.104.0
 
   sass@1.104.0:
+    dependencies:
+      chokidar: 5.0.0
+      immutable: 5.1.5
+      source-map-js: 1.2.1
+    optionalDependencies:
+      '@parcel/watcher': 2.5.6
+    optional: true
+
+  sass@1.105.0:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.5

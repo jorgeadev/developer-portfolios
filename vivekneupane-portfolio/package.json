@@ -29,7 +29,7 @@
 		"autoprefixer": "10.6.0",
 		"postcss": "8.5.28",
 		"prettier": "3.9.6",
-		"sass": "^1.104.0",
+		"sass": "^1.105.0",
 		"tailwindcss": "4.3.3"
 	}
 }
