@@ -19,7 +19,7 @@ importers:
         version: 4.4.1
       '@next/third-parties':
         specifier: 16.3.4
-        version: 16.3.4(next@16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0))(react@19.3.0)
+        version: 16.3.4(next@16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0))(react@19.3.0)
       axios:
         specifier: 1.20.0
         version: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
@@ -28,7 +28,7 @@ importers:
         version: 3.1.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       next:
         specifier: 16.3.3
-        version: 16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0)
+        version: 16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0)
       react:
         specifier: 19.3.0
         version: 19.3.0
@@ -119,13 +119,13 @@ importers:
         version: 2.4.3(react-router-dom@7.18.3(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       react-scripts:
         specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.28.6(@babel/core@7.29.0(supports-color@8.1.1)))(@babel/plugin-transform-react-jsx@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))(supports-color@8.1.1))(@types/babel__core@7.20.5)(clean-css@5.3.3)(csso@4.2.0)(debug@4.4.3(supports-color@8.1.1))(eslint@8.57.1(supports-color@8.1.1))(react@19.3.0)(sass@1.104.0)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@4.9.5)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.28.6(@babel/core@7.29.0(supports-color@8.1.1)))(@babel/plugin-transform-react-jsx@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))(supports-color@8.1.1))(@types/babel__core@7.20.5)(clean-css@5.3.3)(csso@4.2.0)(debug@4.4.3(supports-color@8.1.1))(eslint@8.57.1(supports-color@8.1.1))(react@19.3.0)(sass@1.105.0)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@4.9.5)
       react-slick:
         specifier: 0.31.0
         version: 0.31.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       slick-carousel:
-        specifier: ^1.8.1
-        version: 1.8.1(jquery@3.7.1)
+        specifier: ^2.0.0
+        version: 2.0.0(jquery@3.7.1)
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -150,13 +150,13 @@ importers:
     dependencies:
       '@next/third-parties':
         specifier: 16.3.4
-        version: 16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0))(react@19.3.0)
+        version: 16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0))(react@19.3.0)
       axios:
         specifier: 1.20.0
         version: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       next:
         specifier: 16.3.4
-        version: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0)
+        version: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0)
       react:
         specifier: 19.3.0
         version: 19.3.0
@@ -6245,11 +6245,6 @@ packages:
       sass-embedded:
         optional: true
 
-  sass@1.104.0:
-    resolution: {integrity: sha512-btHMApW2bgolvClhRW8AlQJzgI9lUB3pPSofBQQT+E46GWvf9o0TVQ13SYv5riWZVFyPN+JNz3TKW9XhBlc10w==}
-    engines: {node: '>=20.19.0'}
-    hasBin: true
-
   sass@1.105.0:
     resolution: {integrity: sha512-4EjSuRTyG8M4yRXXY1PT9OUV5zz23xBxJkbIAprohKHqf6HOU4MCpE3U3vAC+iO1gxobBjESNbcj8rYAQZWnyA==}
     engines: {node: '>=20.19.0'}
@@ -6412,8 +6407,8 @@ packages:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
 
-  slick-carousel@1.8.1:
-    resolution: {integrity: sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==}
+  slick-carousel@2.0.0:
+    resolution: {integrity: sha512-GdU9wJUPtYyJij6PTAGhqTu2Dd0FwauvqqYTCUSzfzZg+uhvwJkue6bT1fVQUzAjAid/bXAaZvlcung4cQpuLg==}
     peerDependencies:
       jquery: '>=1.8.0'
 
@@ -8976,15 +8971,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.3.4':
     optional: true
 
-  '@next/third-parties@16.3.4(next@16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0))(react@19.3.0)':
+  '@next/third-parties@16.3.4(next@16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0))(react@19.3.0)':
     dependencies:
-      next: 16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0)
-      react: 19.3.0
-      third-party-capital: 1.0.20
-
-  '@next/third-parties@16.3.4(next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0))(react@19.3.0)':
-    dependencies:
-      next: 16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0)
+      next: 16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0)
       react: 19.3.0
       third-party-capital: 1.0.20
 
@@ -12853,7 +12842,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0):
+  next@16.3.3(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0):
     dependencies:
       '@next/env': 16.3.3
       '@swc/helpers': 0.5.23
@@ -12872,33 +12861,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.3.3
       '@next/swc-win32-arm64-msvc': 16.3.3
       '@next/swc-win32-x64-msvc': 16.3.3
-      sass: 1.104.0
-      sharp: 0.35.4(@types/node@26.1.2)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@types/node'
-      - babel-plugin-macros
-
-  next@16.3.4(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.104.0):
-    dependencies:
-      '@next/env': 16.3.4
-      '@swc/helpers': 0.5.23
-      baseline-browser-mapping: 2.11.5
-      caniuse-lite: 1.0.30001806
-      postcss: 8.5.23
-      react: 19.3.0
-      react-dom: 19.3.0(react@19.3.0)
-      styled-jsx: 5.1.6(@babel/core@7.29.0(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@19.3.0)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 16.3.4
-      '@next/swc-darwin-x64': 16.3.4
-      '@next/swc-linux-arm64-gnu': 16.3.4
-      '@next/swc-linux-arm64-musl': 16.3.4
-      '@next/swc-linux-x64-gnu': 16.3.4
-      '@next/swc-linux-x64-musl': 16.3.4
-      '@next/swc-win32-arm64-msvc': 16.3.4
-      '@next/swc-win32-x64-msvc': 16.3.4
-      sass: 1.104.0
+      sass: 1.105.0
       sharp: 0.35.4(@types/node@26.1.2)
     transitivePeerDependencies:
       - '@babel/core'
@@ -13855,7 +13818,7 @@ snapshots:
     optionalDependencies:
       react-dom: 19.3.0(react@19.3.0)
 
-  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.28.6(@babel/core@7.29.0(supports-color@8.1.1)))(@babel/plugin-transform-react-jsx@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))(supports-color@8.1.1))(@types/babel__core@7.20.5)(clean-css@5.3.3)(csso@4.2.0)(debug@4.4.3(supports-color@8.1.1))(eslint@8.57.1(supports-color@8.1.1))(react@19.3.0)(sass@1.104.0)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@4.9.5):
+  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.28.6(@babel/core@7.29.0(supports-color@8.1.1)))(@babel/plugin-transform-react-jsx@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))(supports-color@8.1.1))(@types/babel__core@7.20.5)(clean-css@5.3.3)(csso@4.2.0)(debug@4.4.3(supports-color@8.1.1))(eslint@8.57.1(supports-color@8.1.1))(react@19.3.0)(sass@1.105.0)(supports-color@8.1.1)(type-fest@0.21.3)(typescript@4.9.5):
     dependencies:
       '@babel/core': 7.29.0(supports-color@8.1.1)
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.11.0)(type-fest@0.21.3)(webpack-dev-server@4.15.2(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.105.4))(webpack@5.105.4)
@@ -13895,7 +13858,7 @@ snapshots:
       react-refresh: 0.11.0
       resolve: 1.22.11
       resolve-url-loader: 4.0.0
-      sass-loader: 12.6.0(sass@1.104.0)(webpack@5.105.4)
+      sass-loader: 12.6.0(sass@1.105.0)(webpack@5.105.4)
       semver: 7.7.4
       source-map-loader: 3.0.2(webpack@5.105.4)
       style-loader: 3.3.4(webpack@5.105.4)
@@ -14179,22 +14142,13 @@ snapshots:
 
   sanitize.css@13.0.0: {}
 
-  sass-loader@12.6.0(sass@1.104.0)(webpack@5.105.4):
+  sass-loader@12.6.0(sass@1.105.0)(webpack@5.105.4):
     dependencies:
       klona: 2.0.6
       neo-async: 2.6.2
       webpack: 5.105.4
     optionalDependencies:
-      sass: 1.104.0
-
-  sass@1.104.0:
-    dependencies:
-      chokidar: 5.0.0
-      immutable: 5.1.5
-      source-map-js: 1.2.1
-    optionalDependencies:
-      '@parcel/watcher': 2.5.6
-    optional: true
+      sass: 1.105.0
 
   sass@1.105.0:
     dependencies:
@@ -14442,7 +14396,7 @@ snapshots:
 
   slash@4.0.0: {}
 
-  slick-carousel@1.8.1(jquery@3.7.1):
+  slick-carousel@2.0.0(jquery@3.7.1):
     dependencies:
       jquery: 3.7.1
 
