@@ -15,8 +15,8 @@ importers:
   developer-portfolio:
     dependencies:
       '@emailjs/browser':
-        specifier: ^4.4.1
-        version: 4.4.1
+        specifier: ^5.0.3
+        version: 5.0.3
       '@next/third-parties':
         specifier: 16.4.0
         version: 16.4.0(next@16.4.1(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.106.1))(react@19.3.0)
@@ -189,8 +189,8 @@ importers:
   vivekneupane-portfolio:
     dependencies:
       '@emailjs/browser':
-        specifier: ^4.4.1
-        version: 4.4.1
+        specifier: ^5.0.3
+        version: 5.0.3
       '@next/third-parties':
         specifier: 16.4.0
         version: 16.4.0(next@16.4.1(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.106.1))(react@19.3.0)
@@ -1074,8 +1074,8 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^6.0.10
 
-  '@emailjs/browser@4.4.1':
-    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
+  '@emailjs/browser@5.0.3':
+    resolution: {integrity: sha512-4HGAkWdzql7mrG34ZFFj7IDJNRgtbl1+yVgHdQJ6XSfhq9gxGUHtttr4UKNi7Fk++1hMXRHy1lTeGZrkioOtsw==}
     engines: {node: '>=14.0.0'}
 
   '@emnapi/runtime@1.11.3':
@@ -8097,7 +8097,7 @@ snapshots:
     dependencies:
       postcss-selector-parser: 6.1.5
 
-  '@emailjs/browser@4.4.1': {}
+  '@emailjs/browser@5.0.3': {}
 
   '@emnapi/runtime@1.11.3':
     dependencies:
