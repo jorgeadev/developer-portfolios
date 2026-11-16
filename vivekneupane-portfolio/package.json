@@ -28,7 +28,7 @@
 		"@tailwindcss/postcss": "4.3.3",
 		"autoprefixer": "10.6.0",
 		"postcss": "8.5.29",
-		"prettier": "3.9.6",
+		"prettier": "3.10.1",
 		"sass": "^1.108.1",
 		"tailwindcss": "4.3.3"
 	}

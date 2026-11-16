@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.10.1
+        version: 3.10.1
 
   developer-portfolio:
     dependencies:
@@ -21,8 +21,8 @@ importers:
         specifier: 16.4.0
         version: 16.4.0(next@16.4.1(@babel/core@7.29.0(supports-color@8.1.1))(@types/node@26.1.2)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.108.1))(react@19.3.0)
       axios:
-        specifier: 1.21.0
-        version: 1.21.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
+        specifier: 1.21.1
+        version: 1.21.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       lottie-react:
         specifier: 3.1.1
         version: 3.1.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -58,8 +58,8 @@ importers:
         specifier: 8.5.30
         version: 8.5.30
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.10.1
+        version: 3.10.1
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -88,8 +88,8 @@ importers:
         specifier: ^14.6.7
         version: 14.6.7(@testing-library/dom@10.4.1)
       axios:
-        specifier: 1.21.0
-        version: 1.21.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
+        specifier: 1.21.1
+        version: 1.21.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       postcss:
         specifier: 8.5.29
         version: 8.5.29
@@ -143,8 +143,8 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.10.1
+        version: 3.10.1
 
   github-portfolio:
     dependencies:
@@ -180,8 +180,8 @@ importers:
         specifier: 8.5.29
         version: 8.5.29
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.10.1
+        version: 3.10.1
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -235,8 +235,8 @@ importers:
         specifier: 8.5.29
         version: 8.5.29
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.10.1
+        version: 3.10.1
       sass:
         specifier: ^1.108.1
         version: 1.108.1
@@ -2658,6 +2658,9 @@ packages:
 
   axios@1.21.0:
     resolution: {integrity: sha512-YCzXMB53Q9PZBsh7yN7wtapit4WepwcHS2fP8QhGsBxSz5YtgYobV7GGlWlAJi+RxfU77GQTQi2DSLUma42EYA==}
+
+  axios@1.21.1:
+    resolution: {integrity: sha512-6eI5Q/Y4u/Um9dDlsRoq5pY2rxnUTv+L4PpLitnbk/i4jb3MxLZ5CsN5Ih3IysbeRYK4pR+P7qfMsOQl9fwwFQ==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -5681,8 +5684,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.9.6:
-    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+  prettier@3.10.1:
+    resolution: {integrity: sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -9882,6 +9885,16 @@ snapshots:
       - debug
       - supports-color
 
+  axios@1.21.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1):
+    dependencies:
+      follow-redirects: 1.16.2(debug@4.4.3(supports-color@8.1.1))
+      form-data: 4.0.6
+      https-proxy-agent: 5.0.1(supports-color@8.1.1)
+      proxy-from-env: 2.1.0
+    transitivePeerDependencies:
+      - debug
+      - supports-color
+
   axobject-query@4.1.0: {}
 
   babel-jest@27.5.1(@babel/core@7.29.0(supports-color@8.1.1))(supports-color@8.1.1):
@@ -13383,7 +13396,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.9.6: {}
+  prettier@3.10.1: {}
 
   pretty-bytes@5.6.0: {}
 
